@@ -27,7 +27,7 @@ section {
   position: absolute;
   top: 50%;
   left: 4em;
-  z-index: 100;
+  z-index: 2;
   margin-top: -6em;
 }
 
@@ -109,7 +109,7 @@ h2 {
 }
 
 .dark .swiper-image h1,
-.dark .swiper-image p {
+.dark .swiper-image {
   color: white;
 }
 
@@ -127,6 +127,7 @@ a.button {
   width: fit-content;
   padding: .75em 1em;
   text-decoration: none;
+  margin-bottom: 1.5em;
 }
 
 a.button:hover {
@@ -152,7 +153,7 @@ a.button-white:hover {
     color: rgba(255,255,255,1);
     top: 70%;
     left: auto;
-    right: 30%;
+    right: 35%;
     /* border: 1px solid white;
     border-radius: 100%;
     padding: 0 .55em; */
@@ -166,12 +167,14 @@ a.button-white:hover {
 }
 
 [data-slidecolor="light"] .swiper-button-prev,
-[data-slidecolor="light"] .swiper-button-next, [data-slidecolor="light"] #show-me {
+[data-slidecolor="light"] .swiper-button-next, [data-slidecolor="light"] #show-me,
+[data-slidecolor="light"] .site-nav {
   color: rgba(0,0,0,1);
 }
 
 [data-slidecolor="dark"] .swiper-button-prev,
-[data-slidecolor="dark"] .swiper-button-next, [data-slidecolor="dark"] #show-me {
+[data-slidecolor="dark"] .swiper-button-next, [data-slidecolor="dark"] #show-me,
+[data-slidecolor="dark"] .site-nav {
   color: rgba(255,255,255,1);
 }
 
@@ -181,7 +184,7 @@ a.button-white:hover {
 
 /* Work Grid */
 .work {
-  background-color: rgba(130, 130, 130, 0.081);
+  background-color: rgb(236, 236, 236);
   height: auto;
 }
 .card-row {
@@ -192,12 +195,12 @@ a.button-white:hover {
 }
 .card {
   transition: all 0.4s ease;
-  min-width: 250px;
-  width: 32%;
+  min-width: 200px;
+  width: 31%;
   min-height: 300px;
   flex-grow: 1;
-  background-color: rgba(130, 130, 130, 0.149);
-  margin: 5px;
+  background-color: rgb(204, 204, 204);
+  margin: 1%;
 }
 .card:nth-child(1) {
   transition-delay: 0.2s;
@@ -212,6 +215,13 @@ a.button-white:hover {
   width: 100%;
 }
 
+.card:hover {
+  transition: all .2s ease;
+  transform: scale(1.01);
+  background-color: rgb(186, 186, 186);
+  cursor: pointer;
+}
+
 [data-inview=no] {
   opacity: 0;
   transform: translate(0, 15%);
@@ -219,5 +229,45 @@ a.button-white:hover {
 
 [data-inview=yes] {
   opacity: 1;
-  transform: translate(0, 0);
+  transform: translate(0, 0) scale(1);
+}
+
+/* footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.367);
+  padding: 2em 0 3em 0;
+}
+
+/* nav */
+header {
+  position: absolute;
+  z-index: 2;
+  left: 4em;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.site-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.site-nav .site-identity {
+  margin-right: auto;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.site-nav li a {
+  display: block;
+  padding: .75em 1em;
+}
+
+.site-nav a {
+  text-decoration: none;
+  /* color: white; */
 }
