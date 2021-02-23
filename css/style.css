@@ -168,13 +168,13 @@ a.button-white:hover {
 
 [data-slidecolor="light"] .swiper-button-prev,
 [data-slidecolor="light"] .swiper-button-next, [data-slidecolor="light"] #show-me,
-[data-slidecolor="light"] .site-nav {
+[data-slidecolor="light"] .site-header {
   color: rgba(0,0,0,1);
 }
 
 [data-slidecolor="dark"] .swiper-button-prev,
 [data-slidecolor="dark"] .swiper-button-next, [data-slidecolor="dark"] #show-me,
-[data-slidecolor="dark"] .site-nav {
+[data-slidecolor="dark"] .site-header {
   color: rgba(255,255,255,1);
 }
 
@@ -194,7 +194,6 @@ a.button-white:hover {
   flex-wrap: wrap;
 }
 .card {
-  transition: all 0.4s ease;
   min-width: 200px;
   width: 31%;
   min-height: 300px;
@@ -216,7 +215,7 @@ a.button-white:hover {
 }
 
 .card:hover {
-  transition: all .2s ease;
+  transition: all .4s cubic-bezier(0,0,0,1);
   transform: scale(1.01);
   background-color: rgb(186, 186, 186);
   cursor: pointer;
@@ -245,6 +244,18 @@ header {
   left: 4em;
   width: 85%;
   margin: 0 auto;
+}
+
+header a {
+  color: black;
+}
+
+header[data-slidecolor="light"] a {
+  color: rgba(0,0,0,1);
+}
+
+header[data-slidecolor="dark"] a {
+  color: rgba(255,255,255,1);
 }
 
 .site-nav {

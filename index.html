@@ -159,16 +159,20 @@
                     console.log('swiper initialized');
                     const initialswiper = document.querySelector('.swiper-container');
                     const initialslide = document.querySelector('.swiper-slide-active');
+                    const initialheader = document.querySelector('.site-header');
                     if (initialslide.classList.contains('dark')) {
                         initialswiper.setAttribute('data-slidecolor', 'dark');
+                        initialheader.setAttribute('data-slidecolor', 'dark');
                     } else {
                         initialswiper.setAttribute('data-slidecolor', 'light');
+                        initialheader.setAttribute('data-slidecolor', 'light');
                     }
                 },
             },
         });
 
         const myswiper = document.querySelector('.swiper-container');
+        const myheader = document.querySelector('.site-header');
 
         swiper.on('transitionEnd', function () {
             console.log('slide changed');
@@ -176,9 +180,11 @@
             if (activeslide.classList.contains('dark')) {
                 console.log('this slide is dark');
                 myswiper.setAttribute('data-slidecolor', 'dark');
+                myheader.setAttribute('data-slidecolor', 'dark');
             } else {
                 console.log('this slide is light');
                 myswiper.setAttribute('data-slidecolor', 'light');
+                myheader.setAttribute('data-slidecolor', 'light');
             }
         });
 
