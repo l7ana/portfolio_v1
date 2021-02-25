@@ -1,3 +1,21 @@
+/* Typography */
+#show-me {
+  position: absolute;
+  top: 50%;
+  left: 4em;
+  z-index: 2;
+  margin-top: -6em;
+}
+
+h2 {
+  padding: 3em 0 0 0 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 html,
 body {
   position: relative;
@@ -22,254 +40,6 @@ section {
   height: 100vh;
 }
 
-/* Typography */
-#show-me {
-  position: absolute;
-  top: 50%;
-  left: 4em;
-  z-index: 2;
-  margin-top: -6em;
-}
-
-h2 {
-  padding: 3em 0 0 0 0;
-}
-
-/* Swiper */
-.swiper-container {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-.swiper-slide {
-  text-align: center;
-  /* background: rgb(175, 175, 175); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-image {
-    background-size:cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    flex-direction: column;
-    padding: 0 4em;
-    text-align: left;
-}
-
-.swiper-image h1 {
-  transition: all .5s ease-out .25s;
-  transform: translateY(100%);
-  clip-path: inset(0 0 100% 0);
- }
- .swiper-slide-active .swiper-image h1 {
-  transform: translateY(0);
-  clip-path: inset(0 0 0 0);
- }
-  
- .swiper-image .button {
-  opacity: 0;
-  transition: all .5s ease-out .5s;
- }
- .swiper-slide-active .swiper-image .button {
-  opacity: 1;
- } 
-
-/* Slides */
-.kpc {
-  background-image: url('../img/KPC_1x1_2.jpg');
-  box-shadow:inset 0 0 0 2000px rgba(51, 61, 71, 0.3);
-}
-
-.haven-solus {
-  background-image: url('../img/prearrival_2.jpg');
-  /* color: white; */
-  box-shadow:inset 0 0 0 2000px rgba(51, 61, 71, 0.3);
-}
-
-.prime {
-  background-image: linear-gradient(0deg, rgba(195, 157, 77, 0.3), rgba(14, 99, 144, 0.3)), url('../img/prime_promo.jpg');
-}
-
-.two-ladies {
-  background-image: url('../img/2ladiesbox.jpg');
-  box-shadow:inset 0 0 0 2000px rgba(48, 36, 27, 0.3);
-}
-
-.podcast-bookcovers {
-  background-image: url('../img/LianaYoung_ThisIsLove_1.jpg');
-  /* color: white; */
-  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
-}
-
-.dark .swiper-image h1,
-.dark .swiper-image {
-  color: white;
-}
-
-.dark .swiper-image .button {
-  color: white;
-  border-color: white;
-}
-
-/* Buttons */
-a.button {
-  border: 1px solid black;
-  color: black;
-  background-color: rgba(0, 0, 0, 0);
-  display: inline;
-  width: fit-content;
-  padding: .75em 1em;
-  text-decoration: none;
-  margin-bottom: 1.5em;
-}
-
-a.button:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-a.button-white {
-  border: 1px solid white;
-  color: white;
-  background-color: rgba(0, 0, 0, 0);
-  display: inline;
-  width: fit-content;
-  padding: .75em 1em;
-  text-decoration: none;
-}
-
-a.button-white:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-/* Swiper Buttons */
-.swiper-button-prev {
-    color: rgba(255,255,255,1);
-    top: 70%;
-    left: auto;
-    right: 35%;
-    /* border: 1px solid white;
-    border-radius: 100%;
-    padding: 0 .55em; */
-}
-
-.swiper-button-next {
-  color: rgba(255,255,255,1);
-  top: 70%;
-  left: auto;
-  right: 25%;
-}
-
-[data-slidecolor="light"] .swiper-button-prev,
-[data-slidecolor="light"] .swiper-button-next, [data-slidecolor="light"] #show-me,
-[data-slidecolor="light"] .site-header {
-  color: rgba(0,0,0,1);
-}
-
-[data-slidecolor="dark"] .swiper-button-prev,
-[data-slidecolor="dark"] .swiper-button-next, [data-slidecolor="dark"] #show-me,
-[data-slidecolor="dark"] .site-header {
-  color: rgba(255,255,255,1);
-}
-
-.swiper-button-next:after, .swiper-button-prev:after {
-  font-size: 1.5em;
-}
-
-/* Work Grid */
-.work {
-  background-color: rgb(236, 236, 236);
-  height: auto;
-}
-.card-row {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.card {
-  transition: all .4s cubic-bezier(0,0,0,1);
-  min-width: 200px;
-  width: 31%;
-  min-height: 300px;
-  flex-grow: 1;
-  background-color: rgb(204, 204, 204);
-  margin: 1%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.card:nth-child(1) {
-  transition-delay: 0.2s;
-}
-.card:nth-child(2) {
-  transition-delay: 0.4s;
-}
-.card:nth-child(3) {
-  transition-delay: 0.6s;
-}
-.card .horizontal {
-  width: 100%;
-}
-.horizontal .card-img {
-  width: 50%;
-  flex: 1;
-}
-.horizontal .card-info {
-  width: 50%;
-  float: right;
-  height: 100%;
-  /* border: 1px solid red; */
-}
-
-.card:hover {
-  transition: all .4s cubic-bezier(0,0,0,1);
-  transform: scale(1.01);
-  background-color: rgb(186, 186, 186);
-  cursor: pointer;
-}
-.card-info {
-  height: 250px;
-}
-.card-img {
-  min-width: 200px;
-  width: 100%;
-  height: 400px;
-}
-#stamp-card {
-  background-image: url(../img/1x1/stamps_1x1.jpg);
-  background-size: cover;
-  background-position-x: center;
-}
-#kinetic-card {
-  background-image: url(../img/1x1/kinetic_1x1.jpg);
-  background-size: cover;
-}
-#twoladies-card {
-  background-image: url(../img/1x1/2ladies_1x1.jpg);
-  background-size: cover;
-}
-#natura-card {
-  background-image: url(../img/4x1/natura_4x2.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-[data-inview=no] {
-  opacity: 0;
-  transform: translate(0, 15%);
-}
-
-[data-inview=yes] {
-  opacity: 1;
-  transform: translate(0, 0) scale(1);
-}
-
 /* footer */
 footer {
   background-color: rgba(0, 0, 0, 0.367);
@@ -289,12 +59,12 @@ header a {
   color: black;
 }
 
-header[data-slidecolor="light"] a {
-  color: rgba(0,0,0,1);
+header[data-slidecolor=light] a {
+  color: black;
 }
 
-header[data-slidecolor="dark"] a {
-  color: rgba(255,255,255,1);
+header[data-slidecolor=dark] a {
+  color: white;
 }
 
 .site-nav {
@@ -314,10 +84,234 @@ header[data-slidecolor="dark"] a {
 
 .site-nav li a {
   display: block;
-  padding: .75em 1em;
+  padding: 0.75em 1em;
 }
 
 .site-nav a {
   text-decoration: none;
   /* color: white; */
+}
+
+/* Work Grid */
+.work {
+  background-color: #ececec;
+  height: auto;
+}
+
+.card-row {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .card-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.card {
+  transition: all 0.4s cubic-bezier(0, 0, 0, 1);
+  background-color: white;
+  margin: 1%;
+}
+.card img {
+  display: block;
+}
+
+.card-info {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 31%;
+  }
+
+  .card.horizontal {
+    width: 100%;
+    display: flex;
+  }
+  .card.horizontal .card-img, .card.horizontal .card-info {
+    width: 100%;
+  }
+}
+.card:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.card:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
+.card:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
+.card:hover {
+  transition: all 0.4s cubic-bezier(0, 0, 0, 1);
+  transform: scale(1.01);
+  background-color: #bababa;
+  cursor: pointer;
+}
+
+[data-inview=no] {
+  opacity: 0;
+  transform: translate(0, 15%);
+}
+
+[data-inview=yes] {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+/* Buttons */
+a.button {
+  border: 1px solid black;
+  color: black;
+  background-color: rgba(0, 0, 0, 0);
+  display: inline;
+  width: -webkit-fit-content;
+  width: fit-content;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  margin-bottom: 1.5em;
+}
+
+a.button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+a.button-white {
+  border: 1px solid white;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  display: inline;
+  width: -webkit-fit-content;
+  width: fit-content;
+  padding: 0.75em 1em;
+  text-decoration: none;
+}
+
+a.button-white:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Swiper Buttons */
+.swiper-button-prev {
+  color: white;
+  top: 70%;
+  left: auto;
+  right: 35%;
+  /* border: 1px solid white;
+  border-radius: 100%;
+  padding: 0 .55em; */
+}
+
+.swiper-button-next {
+  color: white;
+  top: 70%;
+  left: auto;
+  right: 25%;
+}
+
+[data-slidecolor=light] .swiper-button-prev,
+[data-slidecolor=light] .swiper-button-next, [data-slidecolor=light] #show-me,
+[data-slidecolor=light] .site-header {
+  color: black;
+}
+
+[data-slidecolor=dark] .swiper-button-prev,
+[data-slidecolor=dark] .swiper-button-next, [data-slidecolor=dark] #show-me,
+[data-slidecolor=dark] .site-header {
+  color: white;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 1.5em;
+}
+
+/* Swiper */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  /* background: rgb(175, 175, 175); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 0 4em;
+  text-align: left;
+}
+
+.swiper-image h1 {
+  transition: all 0.5s ease-out 0.25s;
+  transform: translateY(100%);
+  -webkit-clip-path: inset(0 0 100% 0);
+          clip-path: inset(0 0 100% 0);
+}
+
+.swiper-slide-active .swiper-image h1 {
+  transform: translateY(0);
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+}
+
+.swiper-image .button {
+  opacity: 0;
+  transition: all 0.5s ease-out 0.5s;
+}
+
+.swiper-slide-active .swiper-image .button {
+  opacity: 1;
+}
+
+/* Slides */
+.kpc {
+  background-image: url("../img/KPC_1x1_2.jpg");
+}
+
+.haven-solus {
+  background-image: url("../img/prearrival_2.jpg");
+  /* color: white; */
+  box-shadow: inset 0 0 0 2000px rgba(51, 61, 71, 0.3);
+}
+
+.prime {
+  background-image: linear-gradient(0deg, rgba(195, 157, 77, 0.3), rgba(14, 99, 144, 0.3)), url("../img/prime_promo.jpg");
+}
+
+.two-ladies {
+  background-image: url("../img/2ladiesbox.jpg");
+  box-shadow: inset 0 0 0 2000px rgba(48, 36, 27, 0.3);
+}
+
+.podcast-bookcovers {
+  background-image: url("../img/LianaYoung_ThisIsLove_1.jpg");
+  /* color: white; */
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+}
+
+.dark .swiper-image h1,
+.dark .swiper-image {
+  color: white;
+}
+
+.dark .swiper-image .button {
+  color: white;
+  border-color: white;
 }
