@@ -11,7 +11,7 @@ body {
 } 
 
 body {
-  background: #eee;
+  background: #ffffff;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
   margin: 0;
@@ -20,6 +20,16 @@ body {
 
 section {
   height: 100vh;
+}
+
+.intro {
+  background-color: #ffffff;
+  padding: 2em 0;
+}
+
+.work {
+  background: #eee;
+  padding: 2em 0;
 }
 
 /* footer */
@@ -72,4 +82,13 @@ header[data-slidecolor="dark"] a {
 .site-nav a {
   text-decoration: none;
   /* color: white; */
+}
+
+// Project Pages
+.project-top {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4em;
+  text-align: left;
+  justify-content: center;
 }

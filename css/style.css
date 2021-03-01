@@ -29,7 +29,7 @@ body {
 }
 
 body {
-  background: #eee;
+  background: #ffffff;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
   margin: 0;
@@ -38,6 +38,16 @@ body {
 
 section {
   height: 100vh;
+}
+
+.intro {
+  background-color: #ffffff;
+  padding: 2em 0;
+}
+
+.work {
+  background: #eee;
+  padding: 2em 0;
 }
 
 /* footer */
@@ -90,6 +100,14 @@ header[data-slidecolor=dark] a {
 .site-nav a {
   text-decoration: none;
   /* color: white; */
+}
+
+.project-top {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4em;
+  text-align: left;
+  justify-content: center;
 }
 
 /* Work Grid */
@@ -164,6 +182,74 @@ header[data-slidecolor=dark] a {
   transform: translate(0, 0) scale(1);
 }
 
+/* GRID SYSTEM */
+.column {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+    margin-left: -1%;
+    margin-right: -1%;
+  }
+
+  .column {
+    flex-grow: 0;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .one-whole {
+    width: 100%;
+  }
+
+  .one-fourth {
+    width: 24%;
+  }
+
+  .one-half {
+    width: 46%;
+  }
+
+  .one-third {
+    width: 29.333%;
+  }
+
+  .two-thirds {
+    width: 58.6666%;
+  }
+
+  .one-fourth {
+    width: 21%;
+  }
+
+  .three-fourths {
+    width: 74%;
+  }
+
+  .push-one-fourth {
+    margin-left: 26%;
+  }
+
+  .push-one-third {
+    margin-left: 33.3333%;
+  }
+
+  .push-two-third {
+    margin-left: 66.6666%;
+  }
+
+  .row.centered {
+    justify-content: center;
+  }
+
+  .column.centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /* Buttons */
 a.button {
   border: 1px solid black;
@@ -171,6 +257,7 @@ a.button {
   background-color: rgba(0, 0, 0, 0);
   display: inline;
   width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 0.75em 1em;
   text-decoration: none;
@@ -187,6 +274,7 @@ a.button-white {
   background-color: rgba(0, 0, 0, 0);
   display: inline;
   width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 0.75em 1em;
   text-decoration: none;
@@ -201,7 +289,7 @@ a.button-white:hover {
   color: white;
   top: 70%;
   left: auto;
-  right: 35%;
+  right: 32%;
   /* border: 1px solid white;
   border-radius: 100%;
   padding: 0 .55em; */
@@ -282,7 +370,8 @@ a.button-white:hover {
 
 /* Slides */
 .kpc {
-  background-image: url("../img/KPC_1x1_2.jpg");
+  background-image: url("../img/4x1/kpc_4x1.jpg");
+  box-shadow: inset 0 0 0 2000px rgba(253, 253, 234, 0.728);
 }
 
 .haven-solus {

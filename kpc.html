@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kalihi Pet Center</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="UPDATE LATER">
+    <meta keywords="UPDATE LATER">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header" id="top">
+        <nav class="site-nav">
+            <div class="site-identity">
+                <h1><a href="index.html">Identity</a></h1>
+            </div>
+            <ul>
+                <li><a href="">Work</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-top kpc">
+        <h2>Case Study</h2>
+        <h1>Kalihi Pet Center Retail Website Redesign</h1>
+        <p>UI Design, Front-end Web Development</p>
+
+    </section>
+
+    <section class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="column two-thirds">
+                    <h1>Introduction</h1>
+                    <p>For this project, I chose to redesign Kalihi Pet Center’s website. Kalihi Pet Center is my go-to
+                        local pet store which I prefer over national pet retailers. The staff are always polite, the
+                        shelves are always well stocked, and they offer the most diverse animals of all the other pet
+                        stores on the island. As a loyal customer, I think it's a natural desire to see a business
+                        represented in a way that is meaningful and true to the positive experience I've had with Kalihi
+                        Pet Center. My goal with this project was to add functionality to their website while
+                        representing the heart of the business through a friendly visual identity.</p>
+                </div>
+                <div class="column one-third">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>
+                            blanks
+                        </li>
+                    </ul>
+                    <h3>Software</h3>
+                    <ul>
+                        <li>Adobe XD</li>
+                        <li>Illustrator</li>
+                        <li>Photoshop</li>
+                        <li>AfterEffects</li>
+                        <li>HTML/SCSS/JS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work">
+        <div class="container">
+            <h1>Conceptual Planning</h1>
+            <p>I did three different home screen wireframes that spotlit different functions of the multi-page site. Key
+                features I felt should be on the homepage was a panel of icons leading directly to product pages, a
+                sign-up/login call to action, and a link leading to pets for adoption. That homepage wireframe then lead
+                the direction of the remaining shop, about, services, and contact pages.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Let me introduce myself.</p>
+            <h1>I'm Liana. I'm a designer in Honolulu, Hawaii and I like spicy food.</h1>
+            <h2>Want to know more?</h2>
+            <a href="" class="button">About Me</a> <a href="" class="button">Contact</a>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            effect: 'slide',
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+
+            // on init set light / dark
+            on: {
+                init: function () {
+                    console.log('swiper initialized');
+                    const initialswiper = document.querySelector('.swiper-container');
+                    const initialslide = document.querySelector('.swiper-slide-active');
+                    const initialheader = document.querySelector('.site-header');
+                    if (initialslide.classList.contains('dark')) {
+                        initialswiper.setAttribute('data-slidecolor', 'dark');
+                        initialheader.setAttribute('data-slidecolor', 'dark');
+                    } else {
+                        initialswiper.setAttribute('data-slidecolor', 'light');
+                        initialheader.setAttribute('data-slidecolor', 'light');
+                    }
+                },
+            },
+        });
+
+        const myswiper = document.querySelector('.swiper-container');
+        const myheader = document.querySelector('.site-header');
+
+        swiper.on('transitionEnd', function () {
+            console.log('slide changed');
+            const activeslide = document.querySelector('.swiper-slide-active');
+            if (activeslide.classList.contains('dark')) {
+                console.log('this slide is dark');
+                myswiper.setAttribute('data-slidecolor', 'dark');
+                myheader.setAttribute('data-slidecolor', 'dark');
+            } else {
+                console.log('this slide is light');
+                myswiper.setAttribute('data-slidecolor', 'light');
+                myheader.setAttribute('data-slidecolor', 'light');
+            }
+        });
+
+    </script>
+
+    <!-- Work Grid -->
+    <script>
+        // CHANGE ACTIVE STATE FOR ALL SECTIONS WITH INTERSECTION OBSERVER
+        const myobserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.setAttribute('data-inview', 'yes');
+                }
+                else {
+                    entry.target.setAttribute('data-inview', 'no');
+                }
+            });
+        });
+        document.querySelectorAll('[data-inview]').forEach((item) => {
+            myobserver.observe(item);
+        });
+    </script>
+</body>
+
+</html>
