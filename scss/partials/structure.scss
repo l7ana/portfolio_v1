@@ -22,16 +22,6 @@ section {
   height: 100vh;
 }
 
-.intro {
-  background-color: #ffffff;
-  padding: 2em 0;
-}
-
-.work {
-  background: #eee;
-  padding: 2em 0;
-}
-
 /* footer */
 footer {
   background-color: rgba(0, 0, 0, 0.367);
@@ -91,4 +81,21 @@ header[data-slidecolor="dark"] a {
   padding: 0 4em;
   text-align: left;
   justify-content: center;
+  height: 58vh;
+}
+
+.intro {
+  background-color: #ffffff;
+  padding: 2em 0;
+  height: auto;
+  height: 34vh;
+}
+
+.work {
+  background: #eee;
+  padding: 2em 0;
+}
+
+.case-study {
+  height: auto;
 }
