@@ -1,8 +1,4 @@
 /* Work Grid */
-.work {
-    background-color: rgb(255, 255, 255);
-    height: auto;
-  }
   .card-row {
     margin: 0 auto;
   }
@@ -17,12 +13,8 @@
 
   .card {
     transition: all .4s cubic-bezier(0,0,0,1);
-    // min-width: 200px;
-    // min-height: 300px;
-    // background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     margin: 1%;
-    // display: flex;
-    // flex-wrap: wrap;
     img {display: block;}
   }
 
@@ -54,7 +46,8 @@
   .card:hover {
     transition: all .4s cubic-bezier(0,0,0,1);
     transform: scale(1.01);
-    background-color: rgba(186, 186, 186, 0.397);
+    background-color: $black;
+    color: white;
     cursor: pointer;
   }
   

@@ -12,7 +12,7 @@ p {
   margin: 0.5em 0 0 0;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-family: "korolev-rounded", sans-serif;
   margin: 0;
 }
@@ -26,11 +26,21 @@ h1 {
 h2 {
   font-size: 4em;
   line-height: 1.2em;
+  margin: 0;
 }
 
 h3 {
   font-size: 2.5em;
   line-height: 1.3em;
+}
+
+h4 {
+  font-family: "realist", sans-serif;
+  font-size: 1.7;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 900;
 }
 
 ul li {
@@ -46,6 +56,30 @@ ul li {
 
 .subhead {
   font-size: 1.5em;
+}
+
+.sectionhead {
+  font-family: "korolev-rounded", sans-serif;
+  font-weight: 300;
+}
+
+#show-me {
+  position: absolute;
+  top: 26.5%;
+  left: 2em;
+  z-index: 2;
+  font-size: 2em;
+}
+#show-me p {
+  font-family: "korolev-rounded", sans-serif;
+  margin-bottom: 2.2em;
+  font-weight: 300;
+}
+#show-me hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, black, rgba(0, 0, 0, 0));
+  width: 360%;
 }
 
 img {
@@ -83,7 +117,7 @@ section {
 
 /* footer */
 footer {
-  background-color: rgba(0, 0, 0, 0.367);
+  background-color: #63cadf;
   padding: 2em 0 3em 0;
 }
 
@@ -149,8 +183,9 @@ header[data-slidecolor=dark] a {
 }
 
 .work {
-  background: #eee;
+  background-color: white;
   padding: 2em 0;
+  height: auto;
 }
 
 .case-study {
@@ -158,11 +193,6 @@ header[data-slidecolor=dark] a {
 }
 
 /* Work Grid */
-.work {
-  background-color: white;
-  height: auto;
-}
-
 .card-row {
   margin: 0 auto;
 }
@@ -176,6 +206,7 @@ header[data-slidecolor=dark] a {
 }
 .card {
   transition: all 0.4s cubic-bezier(0, 0, 0, 1);
+  background-color: white;
   margin: 1%;
 }
 .card img {
@@ -214,7 +245,8 @@ header[data-slidecolor=dark] a {
 .card:hover {
   transition: all 0.4s cubic-bezier(0, 0, 0, 1);
   transform: scale(1.01);
-  background-color: rgba(186, 186, 186, 0.397);
+  background-color: #011627;
+  color: white;
   cursor: pointer;
 }
 
@@ -308,7 +340,7 @@ a.button {
   border: 1px solid black;
   color: black;
   background-color: rgba(0, 0, 0, 0);
-  display: inline;
+  display: inline-block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -452,23 +484,4 @@ a.button:hover {
 .dark .swiper-image .button {
   color: white;
   border-color: white;
-}
-
-#show-me {
-  position: absolute;
-  top: 26.5%;
-  left: 2em;
-  z-index: 2;
-  font-size: 2em;
-}
-#show-me p {
-  font-family: "korolev-rounded", sans-serif;
-  margin-bottom: 2.2em;
-  font-weight: 300;
-}
-#show-me hr {
-  border: 0;
-  height: 1px;
-  background: linear-gradient(to right, black, rgba(0, 0, 0, 0));
-  width: 360%;
 }

@@ -88,23 +88,3 @@
     color: white;
     border-color: white;
   }
-
-  #show-me {
-    position: absolute;
-    top: 26.5%;
-    left: 2em;
-    z-index: 2;
-    // margin-top: -6em;
-    font-size: 2em;
-    p {
-      font-family: $type-heading;
-      margin-bottom: 2.2em;
-      font-weight: 300;
-    }
-    hr {
-    border: 0;
-    height: 1px;
-    background: linear-gradient(to right,  rgb(0, 0, 0), rgba(0,0,0,0));
-    width: 360%;
-    }
-  }
