@@ -9,7 +9,7 @@ a.button {
     text-decoration: none;
     margin: 1em 0 1.5em 0;
     font-family: $type-heading;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
     font-size: 1.5em;
     letter-spacing: .5px;
@@ -17,6 +17,26 @@ a.button {
   
   a.button:hover {
     background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  a.button-white {
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    width: fit-content;
+    padding: .75em 1em;
+    text-decoration: none;
+    margin: 1em 0 1.5em 0;
+    font-family: $type-heading;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: .5px;
+  }
+  
+  a.button-white:hover {
+    background-color: rgba(0, 0, 0, 0.021);
   }
   
   
@@ -26,9 +46,6 @@ a.button {
       top: 70%;
       left: auto;
       right: 32%;
-      /* border: 1px solid white;
-      border-radius: 100%;
-      padding: 0 .55em; */
   }
   
   .swiper-button-next {
@@ -53,4 +70,21 @@ a.button {
   .swiper-button-next:after, .swiper-button-prev:after {
     font-size: 1.5em;
   }
+
+  .case-study {
+    .swiper-button-prev {
+      color: $links;
+      top: auto;
+      bottom: 3%;
+      left: auto;
+      right: 15%;
+  }
   
+  .swiper-button-next {
+    color: $links;
+    top: auto;
+    bottom: 3%;
+    left: auto;
+    right: 10%;
+  }
+  }

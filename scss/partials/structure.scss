@@ -24,7 +24,7 @@ section {
 
 /* footer */
 footer {
-  background-color: $blue;
+  background-color: $blue-lt;
   padding: 2em 0 3em 0;
 }
 
@@ -67,11 +67,12 @@ header[data-slidecolor="dark"] a {
 .site-nav li a {
   display: block;
   padding: .75em 1em;
+  font-family: $type-heading;
+  font-weight: 500;
 }
 
 .site-nav a {
   text-decoration: none;
-  /* color: white; */
 }
 
 // Project Pages
@@ -91,11 +92,25 @@ header[data-slidecolor="dark"] a {
 }
 
 .work {
-  background-color: white;
+  background-color: $black-2;
   padding: 2em 0;
   height: auto;
+  h2 {color: white;}
 }
 
 .case-study {
   height: auto;
+  padding: 2em 0 5em 0;
+}
+
+.to-grey { background-image: linear-gradient(white, $white-1);}
+
+#kpc-bottom {
+  height: auto;
+  padding: 1.5em 0 .5em 0;
+  background-color: #0488a6;
+  h4 {
+    margin: 0;
+    color: white;
+  }
 }

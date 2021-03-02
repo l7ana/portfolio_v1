@@ -5,3 +5,14 @@ img {
 }
 
 .site-identity h1 {font-size: 2em;}
+
+#kpc-ani {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+    .ani img {
+        height: auto;
+    }
+}

@@ -15,6 +15,7 @@ p {
 h1, h2, h3 {
   font-family: "korolev-rounded", sans-serif;
   margin: 0;
+  color: #011627;
 }
 
 h1 {
@@ -39,7 +40,7 @@ h4 {
   font-size: 1.7;
   line-height: 1.5;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.7px;
   font-weight: 900;
 }
 
@@ -65,15 +66,28 @@ ul li {
 
 #show-me {
   position: absolute;
-  top: 26.5%;
+  top: 26%;
   left: 2em;
   z-index: 2;
   font-size: 2em;
 }
 #show-me p {
   font-family: "korolev-rounded", sans-serif;
-  margin-bottom: 2.2em;
+  margin-bottom: 27%;
   font-weight: 300;
+  box-sizing: border-box;
+}
+#show-me p::after {
+  content: "";
+  height: 1px;
+  width: 350%;
+  position: absolute;
+  top: 90%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -3px;
+  background: linear-gradient(to right, currentColor, rgba(0, 0, 0, 0));
 }
 #show-me hr {
   border: 0;
@@ -89,6 +103,17 @@ img {
 
 .site-identity h1 {
   font-size: 2em;
+}
+
+#kpc-ani {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+#kpc-ani .ani img {
+  height: auto;
 }
 
 html,
@@ -117,7 +142,7 @@ section {
 
 /* footer */
 footer {
-  background-color: #63cadf;
+  background-color: #bbe4ed;
   padding: 2em 0 3em 0;
 }
 
@@ -160,11 +185,12 @@ header[data-slidecolor=dark] a {
 .site-nav li a {
   display: block;
   padding: 0.75em 1em;
+  font-family: "korolev-rounded", sans-serif;
+  font-weight: 500;
 }
 
 .site-nav a {
   text-decoration: none;
-  /* color: white; */
 }
 
 .project-top {
@@ -183,13 +209,31 @@ header[data-slidecolor=dark] a {
 }
 
 .work {
-  background-color: white;
+  background-color: #011627;
   padding: 2em 0;
   height: auto;
+}
+.work h2 {
+  color: white;
 }
 
 .case-study {
   height: auto;
+  padding: 2em 0 5em 0;
+}
+
+.to-grey {
+  background-image: linear-gradient(white, #e4f3ff);
+}
+
+#kpc-bottom {
+  height: auto;
+  padding: 1.5em 0 0.5em 0;
+  background-color: #0488a6;
+}
+#kpc-bottom h4 {
+  margin: 0;
+  color: white;
 }
 
 /* Work Grid */
@@ -219,7 +263,11 @@ header[data-slidecolor=dark] a {
 
 @media (min-width: 768px) {
   .card {
+    transition: 0.4s all ease;
     width: 31%;
+  }
+  .card h3, .card p {
+    color: #011627;
   }
 
   .card.horizontal {
@@ -245,9 +293,11 @@ header[data-slidecolor=dark] a {
 .card:hover {
   transition: all 0.4s cubic-bezier(0, 0, 0, 1);
   transform: scale(1.01);
-  background-color: #011627;
-  color: white;
+  background-color: #0e283d;
   cursor: pointer;
+}
+.card:hover h3, .card:hover p {
+  color: white;
 }
 
 [data-inview=no] {
@@ -348,7 +398,7 @@ a.button {
   text-decoration: none;
   margin: 1em 0 1.5em 0;
   font-family: "korolev-rounded", sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 1.5em;
   letter-spacing: 0.5px;
@@ -358,15 +408,34 @@ a.button:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+a.button-white {
+  border: 1px solid white;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  margin: 1em 0 1.5em 0;
+  font-family: "korolev-rounded", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 0.5px;
+}
+
+a.button-white:hover {
+  background-color: rgba(0, 0, 0, 0.021);
+}
+
 /* Swiper Buttons */
 .swiper-button-prev {
   color: white;
   top: 70%;
   left: auto;
   right: 32%;
-  /* border: 1px solid white;
-  border-radius: 100%;
-  padding: 0 .55em; */
 }
 
 .swiper-button-next {
@@ -390,6 +459,21 @@ a.button:hover {
 
 .swiper-button-next:after, .swiper-button-prev:after {
   font-size: 1.5em;
+}
+
+.case-study .swiper-button-prev {
+  color: #6070e6;
+  top: auto;
+  bottom: 3%;
+  left: auto;
+  right: 15%;
+}
+.case-study .swiper-button-next {
+  color: #6070e6;
+  top: auto;
+  bottom: 3%;
+  left: auto;
+  right: 10%;
 }
 
 /* Swiper */
@@ -423,9 +507,9 @@ a.button:hover {
 .swiper-image h1 {
   transition: all 0.5s ease-out 0.25s;
   opacity: 0;
-  transform: translateY(49%);
-  -webkit-clip-path: inset(0 0 85% 0);
-          clip-path: inset(0 0 85% 0);
+  transform: translateY(100%);
+  -webkit-clip-path: inset(0 0 100% 0);
+          clip-path: inset(0 0 100% 0);
 }
 
 .swiper-slide-active .swiper-image h1 {
