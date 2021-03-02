@@ -1,14 +1,42 @@
 /* Typography */
-#show-me {
-  position: absolute;
-  top: 50%;
-  left: 4em;
-  z-index: 2;
-  margin-top: -6em;
+body {
+  font-family: "realist", sans-serif;
+  font-weight: 200;
+  margin: 0;
+}
+
+p {
+  font-family: "realist", sans-serif;
+  font-size: 1.25em;
+  line-height: 1.7em;
+  margin: 0.5em 0 0 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: "korolev-rounded", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 6em;
+  line-height: 1.1em;
+  margin: 0.5em 0 0 0;
 }
 
 h2 {
-  padding: 3em 0 0 0 0;
+  font-size: 4em;
+  line-height: 1.2em;
+}
+
+h3 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+}
+
+ul li {
+  font-family: "realist", sans-serif;
+  font-size: 1.25em;
+  line-height: 1.7em;
 }
 
 .centered {
@@ -16,9 +44,17 @@ h2 {
   text-align: center;
 }
 
+.subhead {
+  font-size: 1.5em;
+}
+
 img {
   max-width: 100%;
   height: auto;
+}
+
+.site-identity h1 {
+  font-size: 2em;
 }
 
 html,
@@ -103,14 +139,13 @@ header[data-slidecolor=dark] a {
   padding: 0 4em;
   text-align: left;
   justify-content: center;
-  height: 58vh;
+  height: 100vh;
 }
 
 .intro {
   background-color: #ffffff;
   padding: 2em 0;
   height: auto;
-  height: 34vh;
 }
 
 .work {
@@ -124,7 +159,7 @@ header[data-slidecolor=dark] a {
 
 /* Work Grid */
 .work {
-  background-color: #ececec;
+  background-color: white;
   height: auto;
 }
 
@@ -141,7 +176,6 @@ header[data-slidecolor=dark] a {
 }
 .card {
   transition: all 0.4s cubic-bezier(0, 0, 0, 1);
-  background-color: white;
   margin: 1%;
 }
 .card img {
@@ -180,7 +214,7 @@ header[data-slidecolor=dark] a {
 .card:hover {
   transition: all 0.4s cubic-bezier(0, 0, 0, 1);
   transform: scale(1.01);
-  background-color: #bababa;
+  background-color: rgba(186, 186, 186, 0.397);
   cursor: pointer;
 }
 
@@ -280,27 +314,16 @@ a.button {
   width: fit-content;
   padding: 0.75em 1em;
   text-decoration: none;
-  margin-bottom: 1.5em;
+  margin: 1em 0 1.5em 0;
+  font-family: "korolev-rounded", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 0.5px;
 }
 
 a.button:hover {
   background-color: rgba(255, 255, 255, 0.3);
-}
-
-a.button-white {
-  border: 1px solid white;
-  color: white;
-  background-color: rgba(0, 0, 0, 0);
-  display: inline;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0.75em 1em;
-  text-decoration: none;
-}
-
-a.button-white:hover {
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Swiper Buttons */
@@ -367,15 +390,17 @@ a.button-white:hover {
 
 .swiper-image h1 {
   transition: all 0.5s ease-out 0.25s;
-  transform: translateY(100%);
-  -webkit-clip-path: inset(0 0 100% 0);
-          clip-path: inset(0 0 100% 0);
+  opacity: 0;
+  transform: translateY(49%);
+  -webkit-clip-path: inset(0 0 85% 0);
+          clip-path: inset(0 0 85% 0);
 }
 
 .swiper-slide-active .swiper-image h1 {
+  opacity: 1;
   transform: translateY(0);
-  -webkit-clip-path: inset(0 0 0 0);
-          clip-path: inset(0 0 0 0);
+  -webkit-clip-path: inset(0 0 -2% 0);
+          clip-path: inset(0 0 -2% 0);
 }
 
 .swiper-image .button {
@@ -390,7 +415,7 @@ a.button-white:hover {
 /* Slides */
 .kpc {
   background-image: url("../img/kpc/4x1/kpc_4x1.jpg");
-  box-shadow: inset 0 0 0 2000px rgba(253, 253, 234, 0.728);
+  box-shadow: inset 0 0 0 2000px rgba(253, 253, 242, 0.753);
 }
 
 .haven-solus {
@@ -400,7 +425,7 @@ a.button-white:hover {
 }
 
 .prime {
-  background-image: linear-gradient(0deg, rgba(195, 157, 77, 0.3), rgba(14, 99, 144, 0.3)), url("../img/prime_promo.jpg");
+  background-image: linear-gradient(0deg, rgba(243, 217, 162, 0.596), rgba(161, 220, 252, 0.863)), url("../img/prime_promo.jpg");
 }
 
 .two-ladies {
@@ -414,12 +439,36 @@ a.button-white:hover {
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
 }
 
+.shabp {
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+}
+
 .dark .swiper-image h1,
-.dark .swiper-image {
+.dark .swiper-image,
+.dark {
   color: white;
 }
 
 .dark .swiper-image .button {
   color: white;
   border-color: white;
+}
+
+#show-me {
+  position: absolute;
+  top: 26.5%;
+  left: 2em;
+  z-index: 2;
+  font-size: 2em;
+}
+#show-me p {
+  font-family: "korolev-rounded", sans-serif;
+  margin-bottom: 2.2em;
+  font-weight: 300;
+}
+#show-me hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, black, rgba(0, 0, 0, 0));
+  width: 360%;
 }

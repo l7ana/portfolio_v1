@@ -1,17 +1,50 @@
-/* Typography */
-#show-me {
-    position: absolute;
-    top: 50%;
-    left: 4em;
-    z-index: 2;
-    margin-top: -6em;
+/* Typography */  
+
+body {
+  font-family: $type-body;
+  font-weight: 200;
+  margin: 0;
+}
+
+p {
+  font-family: $type-body;
+  font-size: 1.25em;
+  line-height: 1.7em;
+  margin: .5em 0 0 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: $type-heading;
+  margin: 0;
+}
+
+h1 {
+  font-size: 6em;
+  line-height: 1.1em;
+  margin: .5em 0 0 0;
+}
+
+h2 {
+    font-size: 4em;
+    line-height: 1.2em;
+  }
+
+  h3 {
+    font-size: 2.5em;
+    line-height: 1.3em;
   }
   
-  h2 {
-    padding: 3em 0 0 0 0;
+ul li {
+    font-family: $type-body;
+    font-size: 1.25em;
+    line-height: 1.7em;
   }
 
   .centered {
     margin: 0 auto;
     text-align: center;
+  }
+
+  .subhead {
+    font-size: 1.5em;
   }

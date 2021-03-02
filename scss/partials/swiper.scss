@@ -28,12 +28,15 @@
   
   .swiper-image h1 {
     transition: all .5s ease-out .25s;
-    transform: translateY(100%);
-    clip-path: inset(0 0 100% 0);
+    opacity: 0;
+    transform: translateY(49%);
+    clip-path: inset(0 0 85% 0);
    }
+   
    .swiper-slide-active .swiper-image h1 {
+    opacity: 1;
     transform: translateY(0);
-    clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 -2% 0);
    }
     
    .swiper-image .button {
@@ -47,7 +50,7 @@
   /* Slides */
   .kpc {
     background-image: url('../img/kpc/4x1/kpc_4x1.jpg');
-    box-shadow:inset 0 0 0 2000px rgba(253, 253, 234, 0.728);
+    box-shadow:inset 0 0 0 2000px rgba(253, 253, 242, 0.753);
   }
   
   .haven-solus {
@@ -57,7 +60,7 @@
   }
   
   .prime {
-    background-image: linear-gradient(0deg, rgba(195, 157, 77, 0.3), rgba(14, 99, 144, 0.3)), url('../img/prime_promo.jpg');
+    background-image: linear-gradient(0deg, rgba(243, 217, 162, 0.596), rgba(161, 220, 252, 0.863)), url('../img/prime_promo.jpg');
   }
   
   .two-ladies {
@@ -70,13 +73,38 @@
     /* color: white; */
     box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
   }
+
+  .shabp {
+        box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  }
   
   .dark .swiper-image h1,
-  .dark .swiper-image {
+  .dark .swiper-image,
+  .dark  {
     color: white;
   }
   
   .dark .swiper-image .button {
     color: white;
     border-color: white;
+  }
+
+  #show-me {
+    position: absolute;
+    top: 26.5%;
+    left: 2em;
+    z-index: 2;
+    // margin-top: -6em;
+    font-size: 2em;
+    p {
+      font-family: $type-heading;
+      margin-bottom: 2.2em;
+      font-weight: 300;
+    }
+    hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right,  rgb(0, 0, 0), rgba(0,0,0,0));
+    width: 360%;
+    }
   }
