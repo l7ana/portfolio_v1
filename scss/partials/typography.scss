@@ -29,11 +29,13 @@ h2 {
     font-size: 4em;
     line-height: 1.2em;
     margin: 0;
+    color: $black-1;
   }
 
   h3 {
     font-size: 2.5em;
     line-height: 1.3em;
+    color: $grey-2;
   }
 
   h4 {
@@ -41,8 +43,10 @@ h2 {
     font-size: 1.7;
     line-height: 1.5;
     text-transform: uppercase;
-    letter-spacing: .7px;
-    font-weight: 900;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: $blue;
+    margin: 0;
   }
   
 ul li {
@@ -58,12 +62,15 @@ ul li {
 
   .subhead {
     font-size: 1.5em;
+    margin: 0;
   }
 
   .sectionhead {
     font-family: $type-heading;
     font-weight: 300;
   }
+
+  a { color: $links; }
 
   #show-me {
     position: absolute;
@@ -95,6 +102,11 @@ ul li {
     }
   }
 
-  // .swiper-image h1 {
-  //   border-bottom: 2px solid currentColor;
-  // }
+  footer {
+    h2 {color: $blue;}
+    h4 {
+      color: $grey-3;
+      margin: 1em 0;
+    }
+    h3.sectionhead {color: $white-1;}
+  }

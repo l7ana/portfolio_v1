@@ -41,3 +41,9 @@
         margin-right: auto;
     }
 }
+
+.case-study .row,
+.case-study .row-reverse {
+    display: flex;
+    align-items: center;
+}

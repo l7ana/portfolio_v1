@@ -24,7 +24,7 @@ section {
 
 /* footer */
 footer {
-  background-color: $blue-lt;
+  background-color: $black-2;
   padding: 2em 0 3em 0;
 }
 
@@ -92,10 +92,10 @@ header[data-slidecolor="dark"] a {
 }
 
 .work {
-  background-color: $black-2;
+  background-color: $white-1;
   padding: 2em 0;
   height: auto;
-  h2 {color: white;}
+  h2 {color: $black-2;}
 }
 
 .case-study {
