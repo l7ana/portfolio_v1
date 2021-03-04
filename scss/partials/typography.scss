@@ -21,7 +21,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 6em;
-  line-height: 1.1em;
+  line-height: .9em;
   margin: .5em 0 0 0;
 }
 
@@ -74,31 +74,57 @@ ul li {
 
   #show-me {
     position: absolute;
-    top: 26%;
-    left: 2em;
+    // bottom: 68%;
+    width: 85%;
+    bottom: 68vh;
+    left: 7.5%;
     z-index: 2;
     // margin-top: -6em;
-    font-size: 2em;
+    // border: 1px solid green;
     p {
       font-family: $type-heading;
-      margin-bottom: 27%;
+      font-size: clamp(1em, 3vw, 2em);
       font-weight: 300;
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
     }
     p::after {
       content: '';
-      height: 1px;
-      width: 350%;
+      margin-top: 2vh;
+      height: 6.5vw;
+      width: 100%;
       position: absolute;
-      top: 90%; right: 0; bottom: 0; left: 0;
-      margin-bottom: -3px;
-      background: linear-gradient(to right, currentColor, rgba(0,0,0,0));;
+      top: 100%;
+      left: 0;
+      max-height: 2.3em;
+      // background-color: pink;
+      border-bottom: 3px solid white;
+      @media (max-width: 388px){
+        border: none;
+      } 
     }
-    hr {
-    border: 0;
-    height: 1px;
-    background: linear-gradient(to right,  rgb(0, 0, 0), rgba(0,0,0,0));
-    width: 360%;
+  }
+
+  [data-slidecolor="light"] #show-me p::after {border-color: rgba(0,0,0,1);}
+  [data-slidecolor="dark"] #show-me p::after {border-color: rgb(255, 255, 255);}
+
+  .swiper-textbox {
+    position: relative;
+    top: 34vh;
+    // border: 1px solid white;
+    margin: 0 auto;
+    max-width: 85%;
+    overflow: hidden;
+    h1 { 
+      font-size: clamp(1.5em, 7vw, 5em); 
+      white-space: nowrap;
+      margin: 0;
+      padding: 0;
+    }
+    .subhead {
+      margin-top: 1em;
     }
   }
 

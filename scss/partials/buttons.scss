@@ -64,8 +64,9 @@ a.button {
   [data-slidecolor="dark"] .swiper-button-prev,
   [data-slidecolor="dark"] .swiper-button-next, [data-slidecolor="dark"] #show-me,
   [data-slidecolor="dark"] .site-header {
-    color: rgba(255,255,255,1);
+    color: rgb(255,255,255);
   }
+
   
   .swiper-button-next:after, .swiper-button-prev:after {
     font-size: 1.5em;

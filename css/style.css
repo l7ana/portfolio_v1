@@ -20,7 +20,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 6em;
-  line-height: 1.1em;
+  line-height: 0.9em;
   margin: 0.5em 0 0 0;
 }
 
@@ -75,34 +75,60 @@ a {
 
 #show-me {
   position: absolute;
-  top: 26%;
-  left: 2em;
+  width: 85%;
+  bottom: 68vh;
+  left: 7.5%;
   z-index: 2;
-  font-size: 2em;
 }
 #show-me p {
   font-family: "korolev-rounded", sans-serif;
-  margin-bottom: 27%;
+  font-size: clamp(1em, 3vw, 2em);
   font-weight: 300;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 #show-me p::after {
   content: "";
-  height: 1px;
-  width: 350%;
+  margin-top: 2vh;
+  height: 6.5vw;
+  width: 100%;
   position: absolute;
-  top: 90%;
-  right: 0;
-  bottom: 0;
+  top: 100%;
   left: 0;
-  margin-bottom: -3px;
-  background: linear-gradient(to right, currentColor, rgba(0, 0, 0, 0));
+  max-height: 2.3em;
+  border-bottom: 3px solid white;
 }
-#show-me hr {
-  border: 0;
-  height: 1px;
-  background: linear-gradient(to right, black, rgba(0, 0, 0, 0));
-  width: 360%;
+@media (max-width: 388px) {
+  #show-me p::after {
+    border: none;
+  }
+}
+
+[data-slidecolor=light] #show-me p::after {
+  border-color: black;
+}
+
+[data-slidecolor=dark] #show-me p::after {
+  border-color: white;
+}
+
+.swiper-textbox {
+  position: relative;
+  top: 34vh;
+  margin: 0 auto;
+  max-width: 85%;
+  overflow: hidden;
+}
+.swiper-textbox h1 {
+  font-size: clamp(1.5em, 7vw, 5em);
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+.swiper-textbox .subhead {
+  margin-top: 1em;
 }
 
 footer h2 {
@@ -522,11 +548,6 @@ a.button-white:hover {
   background-position: center;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  flex-direction: column;
-  padding: 0 4em;
   text-align: left;
 }
 
