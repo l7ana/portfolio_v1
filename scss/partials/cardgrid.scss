@@ -13,13 +13,20 @@
 
   .card {
     transition: all .4s cubic-bezier(0,0,0,1);
-    background-color: rgb(255, 255, 255);
     margin: 1%;
     img {display: block;}
+    .card-info {
+      padding: 20px;
+      background-color: rgb(255, 255, 255);
+    }
   }
 
-  .card-info {
-      padding: 20px;
+  .card:hover {
+    transition: all .4s cubic-bezier(0,0,0,1);
+    transform: scale(1.01);
+    cursor: pointer;
+    h3, p {color: white;}
+    .card-info { background-color: $black-1;}
   }
 
   @media (min-width: 768px) {
@@ -43,14 +50,6 @@
   }
   .card:nth-child(3) {
     transition-delay: 0.6s;
-  }
-  
-  .card:hover {
-    transition: all .4s cubic-bezier(0,0,0,1);
-    transform: scale(1.01);
-    background-color: $black-1;
-    cursor: pointer;
-    h3, p {color: white;}
   }
   
   [data-inview=no] {

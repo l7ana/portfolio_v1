@@ -106,14 +106,6 @@ a {
   }
 }
 
-[data-slidecolor=light] #show-me p::after {
-  border-color: black;
-}
-
-[data-slidecolor=dark] #show-me p::after {
-  border-color: white;
-}
-
 .swiper-textbox {
   position: relative;
   top: 34vh;
@@ -129,17 +121,6 @@ a {
 }
 .swiper-textbox .subhead {
   margin-top: 1em;
-}
-
-footer h2 {
-  color: #63cadf;
-}
-footer h4 {
-  color: #465c6e;
-  margin: 1em 0;
-}
-footer h3.sectionhead {
-  color: #f1f9ff;
 }
 
 img {
@@ -188,8 +169,18 @@ section {
 
 /* footer */
 footer {
-  background-color: #011627;
-  padding: 2em 0 3em 0;
+  background-color: #63cadf;
+  padding: 2em 0 2em 0;
+}
+footer h2 {
+  color: white;
+  margin-bottom: 0.25em;
+}
+footer h4 {
+  color: #465c6e;
+}
+footer h3.sectionhead {
+  color: #bbe4ed;
 }
 
 /* nav */
@@ -203,14 +194,6 @@ header {
 
 header a {
   color: black;
-}
-
-header[data-slidecolor=light] a {
-  color: black;
-}
-
-header[data-slidecolor=dark] a {
-  color: white;
 }
 
 .site-nav {
@@ -242,14 +225,18 @@ header[data-slidecolor=dark] a {
 .project-top {
   display: flex;
   flex-direction: column;
-  padding: 0 4em;
   text-align: left;
   justify-content: center;
   height: 100vh;
 }
+.project-top .sectionhead {
+  margin-bottom: 0.5em;
+}
+.project-top h1 {
+  margin: 0 0 0.25em 0;
+}
 
 .intro {
-  background-color: #ffffff;
   padding: 2em 0;
   height: auto;
 }
@@ -265,17 +252,28 @@ header[data-slidecolor=dark] a {
 
 .case-study {
   height: auto;
-  padding: 2em 0 5em 0;
+  padding-bottom: 5em;
+}
+.case-study .swiper-container {
+  margin-bottom: 2em;
 }
 
-.to-grey {
+.white-1 {
+  background-color: #f1f9ff;
+}
+
+.to-white {
   background-image: linear-gradient(white, #f1f9ff);
+}
+
+#kpc-intro {
+  background-image: linear-gradient(white, #ebf5f7);
 }
 
 #kpc-bottom {
   height: auto;
-  padding: 1.5em 0 0.5em 0;
-  background-color: #0488a6;
+  padding: 2em 0 0.5em 0;
+  background-color: #63cadf;
 }
 #kpc-bottom h4 {
   margin: 0;
@@ -296,15 +294,26 @@ header[data-slidecolor=dark] a {
 }
 .card {
   transition: all 0.4s cubic-bezier(0, 0, 0, 1);
-  background-color: white;
   margin: 1%;
 }
 .card img {
   display: block;
 }
-
-.card-info {
+.card .card-info {
   padding: 20px;
+  background-color: white;
+}
+
+.card:hover {
+  transition: all 0.4s cubic-bezier(0, 0, 0, 1);
+  transform: scale(1.01);
+  cursor: pointer;
+}
+.card:hover h3, .card:hover p {
+  color: white;
+}
+.card:hover .card-info {
+  background-color: #0e283d;
 }
 
 @media (min-width: 768px) {
@@ -336,16 +345,6 @@ header[data-slidecolor=dark] a {
   transition-delay: 0.6s;
 }
 
-.card:hover {
-  transition: all 0.4s cubic-bezier(0, 0, 0, 1);
-  transform: scale(1.01);
-  background-color: #0e283d;
-  cursor: pointer;
-}
-.card:hover h3, .card:hover p {
-  color: white;
-}
-
 [data-inview=no] {
   opacity: 0;
   transform: translate(0, 15%);
@@ -367,6 +366,7 @@ header[data-slidecolor=dark] a {
     display: flex;
     margin-left: -1%;
     margin-right: -1%;
+    margin-bottom: 1em;
   }
 
   .row-reverse {
@@ -497,18 +497,6 @@ a.button-white:hover {
   right: 25%;
 }
 
-[data-slidecolor=light] .swiper-button-prev,
-[data-slidecolor=light] .swiper-button-next, [data-slidecolor=light] #show-me,
-[data-slidecolor=light] .site-header {
-  color: black;
-}
-
-[data-slidecolor=dark] .swiper-button-prev,
-[data-slidecolor=dark] .swiper-button-next, [data-slidecolor=dark] #show-me,
-[data-slidecolor=dark] .site-header {
-  color: white;
-}
-
 .swiper-button-next:after, .swiper-button-prev:after {
   font-size: 1.5em;
 }
@@ -614,5 +602,35 @@ a.button-white:hover {
 
 .dark .swiper-image .button {
   color: white;
+  border-color: white;
+}
+
+header[data-slidecolor=light] a {
+  color: black;
+}
+
+header[data-slidecolor=dark] a {
+  color: white;
+}
+
+[data-slidecolor=light] .swiper-button-prev,
+[data-slidecolor=light] .swiper-button-next,
+[data-slidecolor=light] #show-me,
+[data-slidecolor=light] .site-header {
+  color: black;
+}
+
+[data-slidecolor=dark] .swiper-button-prev,
+[data-slidecolor=dark] .swiper-button-next,
+[data-slidecolor=dark] #show-me,
+[data-slidecolor=dark] .site-header {
+  color: white;
+}
+
+[data-slidecolor=light] #show-me p::after {
+  border-color: black;
+}
+
+[data-slidecolor=dark] #show-me p::after {
   border-color: white;
 }

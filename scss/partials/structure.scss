@@ -24,9 +24,12 @@ section {
 
 /* footer */
 footer {
-  background-color: $black-2;
-  padding: 2em 0 3em 0;
-}
+  background-color: $blue;
+  padding: 2em 0 2em 0;
+  h2 {color: white; margin-bottom: .25em;}
+    h4 {color: $grey-3;}
+    h3.sectionhead {color: $blue-lt;}
+  }
 
 /* nav */
 header {
@@ -39,14 +42,6 @@ header {
 
 header a {
   color: black;
-}
-
-header[data-slidecolor="light"] a {
-  color: rgba(0,0,0,1);
-}
-
-header[data-slidecolor="dark"] a {
-  color: rgb(255,255,255);
 }
 
 .site-nav {
@@ -76,17 +71,18 @@ header[data-slidecolor="dark"] a {
 }
 
 // Project Pages
+
 .project-top {
   display: flex;
   flex-direction: column;
-  padding: 0 4em;
   text-align: left;
   justify-content: center;
   height: 100vh;
+  .sectionhead {margin-bottom: .5em;}
+  h1 {margin: 0 0 .25em 0;}
 }
 
 .intro {
-  background-color: #ffffff;
   padding: 2em 0;
   height: auto;
 }
@@ -100,15 +96,21 @@ header[data-slidecolor="dark"] a {
 
 .case-study {
   height: auto;
-  padding: 2em 0 5em 0;
+  padding-bottom: 5em;
+  .swiper-container {margin-bottom: 2em;}
 }
 
-.to-grey { background-image: linear-gradient(white, $white-1);}
+.white-1 {background-color: $white-1;}
+.to-white { background-image: linear-gradient(white, $white-1);}
+
+// Project ids
+#kpc-intro {
+  background-image: linear-gradient(white, rgb(235,245,247));}
 
 #kpc-bottom {
   height: auto;
-  padding: 1.5em 0 .5em 0;
-  background-color: #0488a6;
+  padding: 2em 0 .5em 0;
+  background-color: $blue;
   h4 {
     margin: 0;
     color: white;

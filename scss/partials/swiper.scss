@@ -92,3 +92,25 @@
     color: white;
     border-color: white;
   }
+
+  // Slider Hero Light/Dark
+
+  header[data-slidecolor="light"] a {color: rgba(0,0,0,1); }
+  header[data-slidecolor="dark"] a {color: rgb(255,255,255);}
+
+  [data-slidecolor="light"] .swiper-button-prev,
+  [data-slidecolor="light"] .swiper-button-next, 
+  [data-slidecolor="light"] #show-me,
+  [data-slidecolor="light"] .site-header {
+    color: rgba(0,0,0,1);
+  }
+  
+  [data-slidecolor="dark"] .swiper-button-prev,
+  [data-slidecolor="dark"] .swiper-button-next, 
+  [data-slidecolor="dark"] #show-me,
+  [data-slidecolor="dark"] .site-header {
+    color: rgb(255,255,255);
+  }
+  
+  [data-slidecolor="light"] #show-me p::after {border-color: rgba(0,0,0,1);}
+  [data-slidecolor="dark"] #show-me p::after {border-color: rgb(255, 255, 255);}

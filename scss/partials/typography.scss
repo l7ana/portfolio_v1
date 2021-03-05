@@ -107,9 +107,6 @@ ul li {
     }
   }
 
-  [data-slidecolor="light"] #show-me p::after {border-color: rgba(0,0,0,1);}
-  [data-slidecolor="dark"] #show-me p::after {border-color: rgb(255, 255, 255);}
-
   .swiper-textbox {
     position: relative;
     top: 34vh;
@@ -126,13 +123,4 @@ ul li {
     .subhead {
       margin-top: 1em;
     }
-  }
-
-  footer {
-    h2 {color: $blue;}
-    h4 {
-      color: $grey-3;
-      margin: 1em 0;
-    }
-    h3.sectionhead {color: $white-1;}
   }
