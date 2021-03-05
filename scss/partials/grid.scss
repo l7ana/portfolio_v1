@@ -25,6 +25,7 @@
     }
 
     .one-whole {width: 100%}
+    .one-eigth {width:12%}
     .one-fourth {width: 24%;}
     .one-half { width: 46%; }
     .one-third { width: 29.333%; }
@@ -43,8 +44,8 @@
     }
 }
 
-.case-study .row,
-.case-study .row-reverse {
+.img-row .row,
+.img-row .row-reverse {
     display: flex;
     align-items: center;
 }

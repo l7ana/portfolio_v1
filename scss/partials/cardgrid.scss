@@ -14,19 +14,21 @@
   .card {
     transition: all .4s cubic-bezier(0,0,0,1);
     margin: 1%;
-    img {display: block;}
-    .card-info {
-      padding: 20px;
+    background-color: rgb(255, 255, 255);
+    img {
+      display: block;
       background-color: rgb(255, 255, 255);
     }
+    .card-info { padding: 20px; }
   }
 
   .card:hover {
     transition: all .4s cubic-bezier(0,0,0,1);
     transform: scale(1.01);
     cursor: pointer;
+    background-color: $black-1;
     h3, p {color: white;}
-    .card-info { background-color: $black-1;}
+    img {background-color: rgb(255, 255, 255); }
   }
 
   @media (min-width: 768px) {

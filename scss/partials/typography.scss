@@ -70,12 +70,20 @@ ul li {
     font-weight: 300;
   }
 
-  a { color: $links; }
+  a { 
+    color: $links;
+    font-weight: 400;
+   }
+
+  .intro ul{
+    list-style: none;
+    padding: 0;
+  }
 
   #show-me {
     position: absolute;
     // bottom: 68%;
-    width: 85%;
+    width: 80%;
     bottom: 68vh;
     left: 7.5%;
     z-index: 2;
@@ -110,10 +118,11 @@ ul li {
   .swiper-textbox {
     position: relative;
     top: 34vh;
-    // border: 1px solid white;
-    margin: 0 auto;
-    max-width: 85%;
-    overflow: hidden;
+    // border: 1px solid red;
+    margin: 0;
+    left: 7.5%;
+    width: 80%;
+    // overflow: hidden;
     h1 { 
       font-size: clamp(1.5em, 7vw, 5em); 
       white-space: nowrap;
