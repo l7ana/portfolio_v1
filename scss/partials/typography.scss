@@ -35,7 +35,7 @@ h2 {
   h3 {
     font-size: 2.5em;
     line-height: 1.3em;
-    color: $grey-2;
+    color: $grey-2;  
   }
 
   h4 {
@@ -55,7 +55,7 @@ ul li {
     line-height: 1.7em;
   }
 
-  .centered {
+  .text-centered {
     margin: 0 auto;
     text-align: center;
   }
@@ -85,7 +85,7 @@ ul li {
     // bottom: 68%;
     width: 80%;
     bottom: 68vh;
-    left: 7.5%;
+    left: 9.5%;
     z-index: 2;
     // margin-top: -6em;
     // border: 1px solid green;
@@ -120,7 +120,7 @@ ul li {
     top: 34vh;
     // border: 1px solid red;
     margin: 0;
-    left: 7.5%;
+    left: 9.5%;
     width: 80%;
     // overflow: hidden;
     h1 { 

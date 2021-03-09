@@ -54,7 +54,7 @@ ul li {
   line-height: 1.7em;
 }
 
-.centered {
+.text-centered {
   margin: 0 auto;
   text-align: center;
 }
@@ -83,7 +83,7 @@ a {
   position: absolute;
   width: 80%;
   bottom: 68vh;
-  left: 7.5%;
+  left: 9.5%;
   z-index: 2;
 }
 #show-me p {
@@ -116,7 +116,7 @@ a {
   position: relative;
   top: 34vh;
   margin: 0;
-  left: 7.5%;
+  left: 9.5%;
   width: 80%;
 }
 .swiper-textbox h1 {
@@ -242,7 +242,7 @@ header a {
 }
 
 .intro {
-  padding: 2em 0;
+  padding: 5em 0;
   height: auto;
 }
 
@@ -255,12 +255,17 @@ header a {
   color: #011627;
 }
 
+.column.one-eigth h3 {
+  margin-top: 0.57em;
+}
+
 .case-study {
   height: auto;
   padding-bottom: 5em;
+  margin-bottom: 5em;
 }
 .case-study .swiper-container {
-  margin-bottom: 2em;
+  margin-bottom: 5em;
 }
 
 .white-1 {
@@ -373,7 +378,7 @@ header a {
     display: flex;
     margin-left: -1%;
     margin-right: -1%;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
   }
 
   .row-reverse {
@@ -435,6 +440,15 @@ header a {
 
   .row.centered {
     justify-content: center;
+  }
+
+  .row.no-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .row.no-margin .column {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .column.centered {

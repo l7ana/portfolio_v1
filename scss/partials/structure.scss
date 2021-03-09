@@ -82,7 +82,7 @@ header a {
 }
 
 .intro {
-  padding: 2em 0;
+  padding: 5em 0;
   height: auto;
 }
 
@@ -93,10 +93,15 @@ header a {
   h2 {color: $black-2;}
 }
 
+.column.one-eigth h3 {
+  margin-top: .57em;
+}
+
 .case-study {
   height: auto;
   padding-bottom: 5em;
-  .swiper-container {margin-bottom: 2em;}
+  margin-bottom: 5em;
+  .swiper-container {margin-bottom: 5em;}
 }
 
 .white-1 {background-color: $white-1;}
