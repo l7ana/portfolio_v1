@@ -53,13 +53,14 @@
   .card:nth-child(3) {
     transition-delay: 0.6s;
   }
-  
-  [data-inview=no] {
-    opacity: 0;
-    transform: translate(0, 15%);
-  }
-  
-  [data-inview=yes] {
-    opacity: 1;
-    transform: translate(0, 0) scale(1);
-  }
+
+  // Data In/Out View
+[data-inview=no] {
+  opacity: 0;
+  transform: translate(0, 15%);
+}
+
+[data-inview=yes] {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}

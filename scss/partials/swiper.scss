@@ -28,28 +28,7 @@
     // padding: 0 4em;
     text-align: left;
     // border: 2px solid blue;
-  }
-  
-  .swiper-image h1 {
-    transition: all .5s ease-out .25s;
-    opacity: 0;
-    transform: translateY(100%);
-    clip-path: inset(0 0 100% 0);
-   }
-   
-   .swiper-slide-active .swiper-image h1 {
-    opacity: 1;
-    transform: translateY(0);
-    clip-path: inset(0 0 -2% 0);
-   }
-    
-   .swiper-image .button {
-    opacity: 0;
-    transition: all .5s ease-out .5s;
-   }
-   .swiper-slide-active .swiper-image .button {
-    opacity: 1;
-   } 
+  } 
   
   /* Slides */
   .kpc {

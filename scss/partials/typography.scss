@@ -2,7 +2,7 @@
 
 body {
   font-family: $type-body;
-  font-weight: 200;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -40,19 +40,13 @@ h2 {
 
   h4 {
     font-family: $type-body;
-    font-size: 1.7;
+    font-size: 1.2em;
     line-height: 1.5;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
     color: $blue;
     margin: 0;
-  }
-  
-ul li {
-    font-family: $type-body;
-    font-size: 1.25em;
-    line-height: 1.7em;
   }
 
   .text-centered {
@@ -74,11 +68,6 @@ ul li {
     color: $links;
     font-weight: 400;
    }
-
-  .intro ul{
-    list-style: none;
-    padding: 0;
-  }
 
   #show-me {
     position: absolute;
@@ -131,5 +120,42 @@ ul li {
     }
     .subhead {
       margin-top: 1em;
+    }
+  }
+
+ul li {
+    font-family: $type-body;
+    font-size: 1.25em;
+    line-height: 1.7em;
+  }
+ul.bulleted li {
+  list-style: none;
+  font-weight: 600;
+}
+ul.bulleted li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: $links; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+  .intro ul{
+    list-style: none;
+    padding: 0;
+    li {
+      font-weight: 700;
+      color: $grey-2;
+    }
+  }
+
+  .intro {
+    .column.one-eigth h3 {
+      margin-top: 1.6em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: $blue;
+      font-size: 1.5em;
     }
   }

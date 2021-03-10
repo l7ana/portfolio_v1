@@ -59,14 +59,30 @@ header a {
 }
 
 .site-nav li a {
-  display: block;
-  padding: .75em 1em;
+  display: inline-block;
+  text-align: center;
+  padding: .5em 1em;
   font-family: $type-heading;
   font-weight: 500;
-}
-
-.site-nav a {
   text-decoration: none;
+  position: relative;
+  &:after {
+    content: '';
+		position: absolute;
+    display: block;
+		bottom: 9px;
+		left: 0; right: 0;
+		height: 2px;
+		background-color: $links;
+    width: 0;
+    transition: all .5s ease;
+  }
+  &:hover,
+  &:focus {
+    &:after{
+      width: 100%;
+    }
+  }
 }
 
 // Project Pages
@@ -93,15 +109,12 @@ header a {
   h2 {color: $black-2;}
 }
 
-.column.one-eigth h3 {
-  margin-top: .57em;
-}
-
 .case-study {
   height: auto;
   padding-bottom: 5em;
   margin-bottom: 5em;
   .swiper-container {margin-bottom: 5em;}
+  img {margin-bottom: 2em;}
 }
 
 .white-1 {background-color: $white-1;}
@@ -114,6 +127,8 @@ header a {
 #kpc-bottom {
   height: auto;
   padding: 2em 0 1em 0;
+  display: flex;
+  justify-content: center;
   background-color:#ff6e6d;
   h4 {
     margin: 0;
