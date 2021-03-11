@@ -8,32 +8,15 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-      }   
-  }
-
-  .card {
-    transition: all .4s cubic-bezier(0,0,0,1);
-    margin: 1%;
-    background-color: rgb(255, 255, 255);
-    img {
-      display: block;
-      background-color: rgb(255, 255, 255);
-    }
-    .card-info { padding: 20px; }
-  }
-
-  .card:hover {
-    transition: all .4s cubic-bezier(0,0,0,1);
-    transform: scale(1.01);
-    cursor: pointer;
-    background-color: $black-1;
-    h3, p {color: white;}
-    img {background-color: rgb(255, 255, 255); }
+      }  
+      .card.horizontal {
+        flex-direction: row;
+      } 
   }
 
   @media (min-width: 768px) {
     .card {
-      transition: .4s all ease;
+      // transition: .4s all ease;
         width: 31%;
         h3, p {color: $black-2;}
       }
@@ -43,24 +26,3 @@
         .card-img, .card-info {width: 100%;}
     }
   }
-  
-  .card:nth-child(1) {
-    transition-delay: 0.2s;
-  }
-  .card:nth-child(2) {
-    transition-delay: 0.4s;
-  }
-  .card:nth-child(3) {
-    transition-delay: 0.6s;
-  }
-
-  // Data In/Out View
-[data-inview=no] {
-  opacity: 0;
-  transform: translate(0, 15%);
-}
-
-[data-inview=yes] {
-  opacity: 1;
-  transform: translate(0, 0) scale(1);
-}

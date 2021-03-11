@@ -6,6 +6,23 @@ img {
 
 .site-identity h1 {font-size: 2em;}
 
+.video-bg {
+    background-image: none;
+}
+
+.video-bg-top {
+    z-index: 20;
+}
+    
+video.video-bg {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0; left:0;
+    z-index: 10;
+}
+
 #kpc-ani {
     display: flex;
     flex-direction: row;
