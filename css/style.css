@@ -201,6 +201,27 @@ video.video-bg {
   height: auto;
 }
 
+.imac-mockup {
+  background-image: url(../img/imac.png);
+  background-repeat: no-repeat;
+  width: 915px;
+  height: 743px;
+  background-size: cover;
+  margin: 0 auto;
+}
+.imac-mockup .imac-container {
+  width: 843px;
+  height: 480px;
+  margin: 0 auto;
+  padding-top: 35px;
+  overflow: hidden;
+  position: relative;
+}
+.imac-mockup .imac-container .imac-content {
+  position: absolute;
+  left: -25px;
+}
+
 html,
 body {
   position: relative;
@@ -339,6 +360,11 @@ header a {
 
 .to-white {
   background-image: linear-gradient(white, #f1f9ff);
+}
+
+.project-top.kpc {
+  background-image: url("../img/kpc/4x1/kpc_4x1.jpg");
+  box-shadow: inset 0 0 0 2000px rgba(253, 253, 242, 0.753);
 }
 
 #kpc-intro {

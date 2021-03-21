@@ -33,3 +33,25 @@ video.video-bg {
         height: auto;
     }
 }
+
+.imac-mockup {
+    background-image: url(../img/imac.png);
+    background-repeat: no-repeat;
+    width: 915px;
+    height: 743px;
+    background-size: cover;
+    margin: 0 auto;
+    .imac-container {
+        width: 843px;
+        height: 480px;
+        margin: 0 auto;
+        padding-top: 35px;
+        // border: 1px solid red;
+        overflow: hidden;
+        position: relative;
+        .imac-content {
+            position: absolute;
+            left: -25px;
+        }
+    }
+}
