@@ -112,6 +112,7 @@ h2 {
     left: 9.5%;
     width: 80%;
     // overflow: hidden;
+    z-index: 11;
     h1 { 
       font-size: clamp(1.5em, 7vw, 5em); 
       white-space: nowrap;
