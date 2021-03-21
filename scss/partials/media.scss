@@ -28,9 +28,11 @@ video.video-bg {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-end;
-    justify-content: space-around;
-    .ani img {
+    justify-content: space-evenly;
+    .one-third {text-align: center;}
+    img {
         height: auto;
+        // border: 1px solid blue;
     }
 }
 
