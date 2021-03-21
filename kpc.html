@@ -131,7 +131,7 @@
             <div class="img-row">
                 <div class="row-reverse">
                     <div class="one-half column" data-inview="no">
-                        <img src="img/kpc/1x1/kpc-type_1x1.png" alt="kpc typography">
+                        <img src="img/kpc/1x1/type.svg" alt="kpc typography">
                     </div>
                     <div class="one-half column" data-inview="no">
                         <h3>A Genial Type Combo</h3>
@@ -150,7 +150,7 @@
             <div class="img-row">
                 <div class="row">
                     <div class="one-half column" data-inview="no">
-                        <img src="img/kpc/1x1/kpc-color-2_1x1.png" alt="kpc color palette">
+                        <img src="img/kpc/1x1/colorinspo2.svg" alt="kpc color palette">
                     </div>
                     <div class="one-half column" data-inview="no">
                         <h3>Colors Inspiration</h3>
@@ -328,23 +328,6 @@
             scrollbar: {
                 el: '.swiper-scrollbar',
             },
-        });
-
-        const myswiper = document.querySelector('.swiper-container');
-        const myheader = document.querySelector('.site-header');
-
-        swiper.on('transitionEnd', function () {
-            console.log('slide changed');
-            const activeslide = document.querySelector('.swiper-slide-active');
-            if (activeslide.classList.contains('dark')) {
-                console.log('this slide is dark');
-                myswiper.setAttribute('data-slidecolor', 'dark');
-                myheader.setAttribute('data-slidecolor', 'dark');
-            } else {
-                console.log('this slide is light');
-                myswiper.setAttribute('data-slidecolor', 'light');
-                myheader.setAttribute('data-slidecolor', 'light');
-            }
         });
 
     </script>
