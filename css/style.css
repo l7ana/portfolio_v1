@@ -372,6 +372,14 @@ header a {
   margin: 0;
 }
 
+#kpc-notes {
+  background-image: url(../img/kpc/mushu.png);
+  background-size: 370px;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  background-position: left bottom;
+}
+
 #kpc-bottom {
   height: auto;
   padding: 2em 0 1em 0;
