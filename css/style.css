@@ -255,7 +255,7 @@ section {
 
 /* footer */
 footer {
-  background-color: #63cadf;
+  background-color: #173753;
   padding: 2em 0 2em 0;
 }
 footer h2 {
@@ -263,10 +263,10 @@ footer h2 {
   margin-bottom: 0.25em;
 }
 footer h4 {
-  color: #748798;
+  color: #A2AFBA;
 }
 footer h3.sectionhead {
-  color: #bbe4ed;
+  color: #4D6B85;
 }
 
 /* nav */
@@ -596,7 +596,7 @@ a.button-white:hover {
   width: fit-content;
   padding: 0.75em 1em;
   text-decoration: none;
-  margin: 1em 0 1.5em 0;
+  margin: 1em 1em 1.5em 0;
   font-family: "hero-new", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -614,7 +614,7 @@ a.button-white:hover {
   border: 1px solid;
   outline-color: rgba(168, 143, 30, 0);
   outline-offset: 15px;
-  text-shadow: 0.5px 0.5px 1px #D1D7DD;
+  text-shadow: 0.5px 0.5px 1px #748798;
 }
 
 /* Swiper Buttons */
@@ -747,7 +747,7 @@ header[data-slidecolor=dark] a {
   background-color: white;
 }
 .card:hover .card-info {
-  background-color: #0e283d;
+  background-color: #543220;
 }
 
 .card:nth-child(1) {
