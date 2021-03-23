@@ -1,26 +1,28 @@
 @charset "UTF-8";
 /* Typography */
 body {
-  font-family: "realist", sans-serif;
+  font-family: "hero-new", sans-serif;
   font-weight: 300;
   margin: 0;
 }
 
 p {
-  font-family: "realist", sans-serif;
+  font-family: "hero-new", sans-serif;
   font-size: 1.25em;
   line-height: 1.7em;
   margin: 0.5em 0 0 0;
 }
 
-h1, h2, h3 {
-  font-family: "korolev-rounded", sans-serif;
+h2, h3 {
+  font-family: "kepler-std-semicondensed-cap", serif;
   margin: 0;
-  color: #011627;
+  color: #0C1C2A;
 }
 
 h1 {
-  font-size: 6em;
+  font-family: "kepler-std-display", serif;
+  font-weight: 400;
+  font-size: 7em;
   line-height: 0.9em;
   margin: 0.5em 0 0 0;
 }
@@ -29,23 +31,21 @@ h2 {
   font-size: 4em;
   line-height: 1.2em;
   margin: 0;
-  color: #0e283d;
+  color: #173753;
 }
 
 h3 {
   font-size: 2.5em;
   line-height: 1.3em;
-  color: #708291;
+  color: #543220;
 }
 
 h4 {
-  font-family: "realist", sans-serif;
-  font-size: 1.2em;
+  font-family: "hero-new", sans-serif;
+  font-size: 1.5em;
   line-height: 1.5;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  color: #63cadf;
+  font-weight: 400;
+  color: #748798;
   margin: 0;
 }
 
@@ -55,86 +55,43 @@ h4 {
 }
 
 .subhead {
-  font-size: 1.5em;
-  margin: 0;
+  font-family: "kepler-std-semicondensed-cap", serif;
+  font-size: 2em;
+  font-style: italic;
 }
 
 .sectionhead {
-  font-family: "korolev-rounded", sans-serif;
+  font-family: "hero-new", sans-serif;
   font-weight: 300;
+  font-size: 2em;
 }
 
 a {
-  color: #6070e6;
+  color: #1D7D77;
   font-weight: 400;
 }
 
-#show-me {
-  position: absolute;
-  width: 80%;
-  bottom: 68vh;
-  left: 9.5%;
-  z-index: 2;
-}
-#show-me p {
-  font-family: "korolev-rounded", sans-serif;
-  font-size: clamp(1em, 3vw, 2em);
-  font-weight: 300;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-}
-#show-me p::after {
-  content: "";
-  margin-top: 2vh;
-  height: 6.5vw;
-  width: 100%;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  max-height: 2.3em;
-  border-bottom: 3px solid white;
-}
-@media (max-width: 388px) {
-  #show-me p::after {
-    border: none;
-  }
-}
-
-.swiper-textbox {
-  position: relative;
-  top: 34vh;
-  margin: 0;
-  left: 9.5%;
-  width: 80%;
-  z-index: 11;
-}
-.swiper-textbox h1 {
-  font-size: clamp(1.5em, 7vw, 5em);
-  white-space: nowrap;
-  margin: 0;
-  padding: 0;
-}
-.swiper-textbox .subhead {
-  margin-top: 1em;
+p.caption {
+  font-family: "kepler-std-semicondensed-cap", serif;
+  color: #748798;
+  font-weight: 600;
 }
 
 ul li {
-  font-family: "realist", sans-serif;
+  font-family: "hero-new", sans-serif;
   font-size: 1.25em;
   line-height: 1.7em;
 }
 
 ul.bulleted li {
   list-style: none;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 ul.bulleted li::before {
   content: "•";
   /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #6070e6;
+  color: #1D7D77;
   /* Change the color */
   font-weight: bold;
   /* If you want it to be bold */
@@ -151,16 +108,64 @@ ul.bulleted li::before {
   padding: 0;
 }
 .intro ul li {
-  font-weight: 700;
-  color: #708291;
+  color: #543220;
 }
 
 .intro .column.one-eigth h3 {
   margin-top: 1.6em;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #63cadf;
+  color: #543220;
   font-size: 1.5em;
+}
+
+#show-me {
+  position: absolute;
+  width: 80%;
+  bottom: 68vh;
+  left: 9.5%;
+  z-index: 2;
+}
+#show-me p {
+  font-family: "hero-new", sans-serif;
+  font-size: clamp(1em, 3vw, 2em);
+  font-weight: 300;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+#show-me p::after {
+  content: "";
+  margin-top: 3.7vh;
+  height: 6.5vw;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  max-height: 2.3em;
+  border-bottom: 2px solid white;
+}
+@media (max-width: 388px) {
+  #show-me p::after {
+    border: none;
+  }
+}
+
+.swiper-textbox {
+  position: relative;
+  top: 34vh;
+  margin: 0;
+  left: 9.5%;
+  width: 80%;
+  z-index: 11;
+}
+.swiper-textbox h1 {
+  font-size: clamp(1.5em, 7vw, 7em);
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+.swiper-textbox .subhead {
+  margin-top: 1em;
 }
 
 img {
@@ -209,7 +214,6 @@ video.video-bg {
   background-repeat: no-repeat;
   width: 915px;
   height: 743px;
-  background-size: cover;
   margin: 0 auto;
 }
 .imac-mockup .imac-container {
@@ -259,7 +263,7 @@ footer h2 {
   margin-bottom: 0.25em;
 }
 footer h4 {
-  color: #465c6e;
+  color: #748798;
 }
 footer h3.sectionhead {
   color: #bbe4ed;
@@ -296,8 +300,11 @@ header a {
   display: inline-block;
   text-align: center;
   padding: 0.5em 1em;
-  font-family: "korolev-rounded", sans-serif;
-  font-weight: 500;
+  font-family: "hero-new", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
   text-decoration: none;
   position: relative;
 }
@@ -352,10 +359,6 @@ header a {
 }
 .case-study img {
   margin-bottom: 2em;
-}
-
-.white-1 {
-  background-color: #f1f9ff;
 }
 
 .to-white {
@@ -531,10 +534,10 @@ a.button {
   padding: 0.75em 1em;
   text-decoration: none;
   margin: 1em 1em 1.5em 0;
-  font-family: "korolev-rounded", sans-serif;
-  font-weight: 700;
+  font-family: "hero-new", sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
-  font-size: 1.25em;
+  font-size: 1em;
   letter-spacing: 0.5px;
   box-shadow: inset 0 0 20px rgba(241, 249, 255, 0);
   outline: 1px solid;
@@ -549,7 +552,7 @@ a.button:hover {
   border: 1px solid;
   outline-color: rgba(0, 0, 0, 0);
   outline-offset: 15px;
-  text-shadow: 0.5px 0.5px 1px #ccdae6;
+  text-shadow: 0.5px 0.5px 1px #D1D7DD;
 }
 
 a.button-white {
@@ -563,10 +566,10 @@ a.button-white {
   padding: 0.75em 1em;
   text-decoration: none;
   margin: 1em 1em 1.5em 0;
-  font-family: "korolev-rounded", sans-serif;
-  font-weight: 700;
+  font-family: "hero-new", sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
-  font-size: 1.25em;
+  font-size: 1em;
   letter-spacing: 0.5px;
   box-shadow: inset 0 0 20px rgba(241, 249, 255, 0);
   outline: 1px solid;
@@ -580,12 +583,12 @@ a.button-white:hover {
   border: 1px solid;
   outline-color: rgba(255, 255, 255, 0);
   outline-offset: 15px;
-  text-shadow: 0.5px 0.5px 1px #ccdae6;
+  text-shadow: 0.5px 0.5px 1px #D1D7DD;
 }
 
-.button-blue {
+.button-gold {
   cursor: pointer;
-  color: #63cadf;
+  color: #A88F1E;
   border: 0 solid;
   display: inline-block;
   width: -webkit-fit-content;
@@ -594,39 +597,39 @@ a.button-white:hover {
   padding: 0.75em 1em;
   text-decoration: none;
   margin: 1em 0 1.5em 0;
-  font-family: "korolev-rounded", sans-serif;
-  font-weight: 700;
+  font-family: "hero-new", sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
-  font-size: 1.25em;
+  font-size: 1em;
   letter-spacing: 0.5px;
-  box-shadow: inset 0 0 20px rgba(187, 228, 237, 0);
+  box-shadow: inset 0 0 20px rgba(84, 71, 15, 0);
   outline: 1px solid;
-  outline-color: #63cadf;
+  outline-color: #A88F1E;
   outline-offset: 0px;
   text-shadow: none;
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.button-blue:hover {
+.button-gold:hover {
   border: 1px solid;
-  outline-color: rgba(99, 202, 223, 0);
+  outline-color: rgba(168, 143, 30, 0);
   outline-offset: 15px;
-  text-shadow: 0.5px 0.5px 1px #ccdae6;
+  text-shadow: 0.5px 0.5px 1px #D1D7DD;
 }
 
 /* Swiper Buttons */
 .swiper-button-prev {
   color: white;
-  top: 70%;
+  top: 56%;
   left: auto;
-  right: 32%;
+  right: 17%;
 }
 
 .swiper-button-next {
   color: white;
-  top: 70%;
+  top: 56%;
   left: auto;
-  right: 25%;
+  right: 12%;
 }
 
 .swiper-button-next:after, .swiper-button-prev:after {
@@ -770,18 +773,18 @@ header[data-slidecolor=dark] a {
 }
 
 .swiper-image h1 {
-  transition: all 0.5s ease-out 0.25s;
+  transition: all 0.7s ease-out 0.25s;
   opacity: 0;
-  transform: translateY(100%);
-  -webkit-clip-path: inset(0 0 100% 0);
-          clip-path: inset(0 0 100% 0);
+  transform: translateY(180%);
+  -webkit-clip-path: inset(0 0 400% 0);
+          clip-path: inset(0 0 400% 0);
 }
 
 .swiper-slide-active .swiper-image h1 {
   opacity: 1;
   transform: translateY(0);
-  -webkit-clip-path: inset(0 0 -2% 0);
-          clip-path: inset(0 0 -2% 0);
+  -webkit-clip-path: inset(0 0 -12% 0);
+          clip-path: inset(0 0 -12% 0);
 }
 
 .swiper-image .button {

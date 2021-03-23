@@ -62,8 +62,11 @@ header a {
   display: inline-block;
   text-align: center;
   padding: .5em 1em;
-  font-family: $type-heading;
-  font-weight: 500;
+  font-family: $type-body;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: .5px;
   text-decoration: none;
   position: relative;
   &:after {
@@ -116,7 +119,6 @@ header a {
   img {margin-bottom: 2em;}
 }
 
-.white-1 {background-color: $white-1;}
 .to-white { background-image: linear-gradient(white, $white-1);}
 
 // Project ids
