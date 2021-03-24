@@ -44,8 +44,6 @@ h2 {
     font-family: $type-body;
     font-size: 1.5em;
     line-height: 1.5;
-    // text-transform: uppercase;
-    // letter-spacing: 1px;
     font-weight: 400;
     color: $grey-3;
     margin: 0;
@@ -77,6 +75,7 @@ h2 {
      font-family: $type-subhead;
      color: $grey-3;
      font-weight: 600;
+     line-height: 1.2;
     //  font-style: italic;
    }
 

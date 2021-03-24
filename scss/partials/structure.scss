@@ -61,7 +61,7 @@ header a {
 .site-nav li a {
   display: inline-block;
   text-align: center;
-  padding: .5em 1em;
+  padding: .7em 1em;
   font-family: $type-body;
   font-weight: 600;
   text-transform: uppercase;
@@ -76,7 +76,7 @@ header a {
 		bottom: 9px;
 		left: 0; right: 0;
 		height: 2px;
-		background-color: $links;
+		background-color: $turq;
     width: 0;
     transition: all .5s ease;
   }
@@ -85,6 +85,12 @@ header a {
     &:after{
       width: 100%;
     }
+  }
+}
+
+.work {
+  h2 {
+    margin-left: .25em;
   }
 }
 
@@ -141,13 +147,24 @@ header a {
   background-position: left bottom;
 }
 
+#kpc-ani {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  .one-third {text-align: center;}
+  p.caption {margin-top: -1em;}
+}
+
 #kpc-bottom {
   height: auto;
   padding: 2em 0 1em 0;
   display: flex;
   justify-content: center;
+  text-align: center;
   background-color:#ff6e6d;
-  h4 {
+  h3 {
     margin: 0;
     color: white;
   }

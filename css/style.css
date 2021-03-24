@@ -75,6 +75,7 @@ p.caption {
   font-family: "kepler-std-semicondensed-cap", serif;
   color: #748798;
   font-weight: 600;
+  line-height: 1.2;
 }
 
 ul li {
@@ -174,7 +175,9 @@ img {
 }
 
 .site-identity h1 {
-  font-size: 2em;
+  font-size: 2.5em;
+  visibility: hidden;
+  margin-top: -0.25em;
 }
 
 .video-bg {
@@ -195,16 +198,6 @@ video.video-bg {
   z-index: 10;
 }
 
-#kpc-ani {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: space-evenly;
-}
-#kpc-ani .one-third {
-  text-align: center;
-}
 #kpc-ani img {
   height: auto;
 }
@@ -299,7 +292,7 @@ header a {
 .site-nav li a {
   display: inline-block;
   text-align: center;
-  padding: 0.5em 1em;
+  padding: 0.7em 1em;
   font-family: "hero-new", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -316,12 +309,16 @@ header a {
   left: 0;
   right: 0;
   height: 2px;
-  background-color: #6070e6;
+  background-color: #1D7D77;
   width: 0;
   transition: all 0.5s ease;
 }
 .site-nav li a:hover:after, .site-nav li a:focus:after {
   width: 100%;
+}
+
+.work h2 {
+  margin-left: 0.25em;
 }
 
 .project-top {
@@ -383,14 +380,29 @@ header a {
   background-position: left bottom;
 }
 
+#kpc-ani {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+#kpc-ani .one-third {
+  text-align: center;
+}
+#kpc-ani p.caption {
+  margin-top: -1em;
+}
+
 #kpc-bottom {
   height: auto;
   padding: 2em 0 1em 0;
   display: flex;
   justify-content: center;
+  text-align: center;
   background-color: #ff6e6d;
 }
-#kpc-bottom h4 {
+#kpc-bottom h3 {
   margin: 0;
   color: white;
 }
@@ -398,6 +410,36 @@ header a {
 /* Work Grid */
 .card-row {
   margin: 0 auto;
+}
+
+.card {
+  transition: all 0.5s ease 1s;
+  margin: 1%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  display: block;
+  background-color: white;
+}
+.card .card-info {
+  padding: 20px;
+  background-color: white;
+  flex-grow: 1;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+.card:hover h3, .card:hover p {
+  color: white;
+}
+.card:hover img {
+  background-color: white;
+}
+.card:hover .card-info {
+  background-color: #1D7D77;
 }
 
 @media (min-width: 768px) {
@@ -416,7 +458,7 @@ header a {
     width: 31%;
   }
   .card h3, .card p {
-    color: #011627;
+    color: #0C1C2A;
   }
 
   .card.horizontal {
@@ -718,36 +760,6 @@ header[data-slidecolor=dark] a {
 
 [data-slidecolor=dark] #show-me p::after {
   border-color: white;
-}
-
-.card {
-  transition: all 0.5s ease 1s;
-  margin: 1%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-}
-.card img {
-  display: block;
-  background-color: white;
-}
-.card .card-info {
-  padding: 20px;
-  background-color: white;
-  flex-grow: 1;
-}
-
-.card:hover {
-  cursor: pointer;
-}
-.card:hover h3, .card:hover p {
-  color: white;
-}
-.card:hover img {
-  background-color: white;
-}
-.card:hover .card-info {
-  background-color: #543220;
 }
 
 .card:nth-child(1) {

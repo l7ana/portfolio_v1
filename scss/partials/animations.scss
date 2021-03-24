@@ -1,31 +1,5 @@
 // Card Grid
 
-.card {
-    transition: all .5s ease 1s;
-    margin: 1%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    img {
-      display: block;
-      background-color: rgb(255, 255, 255);
-    }
-    .card-info { 
-        padding: 20px;
-        // transition: background-color .5s ease 1s;
-        background-color: rgb(255, 255, 255);
-        flex-grow: 1;
-     }
-  }
-
-  .card:hover {
-    cursor: pointer;
-    h3, p {color: rgb(255, 255, 255);}
-    img {background-color: rgb(255, 255, 255); }
-    .card-info {
-        background-color: $rust;}
-  }
-  
   .card:nth-child(1) {
     transition-delay: 0.2s;
   }
