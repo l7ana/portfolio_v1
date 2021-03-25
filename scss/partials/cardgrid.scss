@@ -1,20 +1,29 @@
 /* Work Grid */
+.work {
+  background-color: $white-1;
+  padding: 5em 0;
+  height: auto;
+  h2 {color: $black-2;}
+}
+
   .card-row {
     margin: 0 auto;
   }
 
   .card {
-    transition: all .5s ease 1s;
+    transition: all .2s ease;
     margin: 1%;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
+    box-shadow: none;
+    // transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     img {
       display: block;
       background-color: rgb(255, 255, 255);
     }
     .card-info { 
-        padding: 20px;
+        padding: 30px;
         background-color: rgb(255, 255, 255);
         flex-grow: 1;
      }
@@ -22,10 +31,8 @@
 
   .card:hover {
     cursor: pointer;
-    h3, p {color: rgb(255, 255, 255);}
-    img {background-color: rgb(255, 255, 255); }
-    .card-info {
-        background-color: $turq;}
+    h3 {color: $turq;}
+    box-shadow: 3px 7px 10px rgba($grey-1,.5), 0 10px 10px rgba($grey-1,0.1);
   }
   
 

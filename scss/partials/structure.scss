@@ -88,12 +88,6 @@ header a {
   }
 }
 
-.work {
-  h2 {
-    margin-left: .25em;
-  }
-}
-
 // Project Pages
 
 .project-top {
@@ -104,18 +98,17 @@ header a {
   height: 80vh;
   .sectionhead {margin-bottom: .5em;}
   h1 {margin: 0 0 .25em 0;}
+  .container {width: 100%;}
+}
+.project-top.swiper-slide {
+  text-align: left;
+  justify-content: start;
+  align-items: start;
 }
 
 .intro {
   padding: 5em 0;
   height: auto;
-}
-
-.work {
-  background-color: $white-1;
-  padding: 2em 0;
-  height: auto;
-  h2 {color: $black-2;}
 }
 
 .case-study {
@@ -127,7 +120,7 @@ header a {
 
 .to-white { background-image: linear-gradient(white, $white-1);}
 
-// Project ids
+// KPC
 
 .project-top.kpc {
   background-image: url('../img/kpc/4x1/kpc_4x1.jpg');
@@ -168,4 +161,16 @@ header a {
     margin: 0;
     color: white;
   }
+}
+
+// City Flag
+
+.project-top.city-flag {
+  background-image: url('../img/cityflag/honolulu-bluedk.jpg');
+  // background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  // h1, p {
+  //   color: white;
+  // }
 }

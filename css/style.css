@@ -169,6 +169,19 @@ ul.bulleted li::before {
   margin-top: 1em;
 }
 
+.work .sectionhead {
+  margin: 1%;
+}
+
+.card h3 {
+  font-family: "kepler-std-semicondensed-cap", serif;
+  font-size: 2em;
+  font-weight: 600;
+}
+.card a {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -317,10 +330,6 @@ header a {
   width: 100%;
 }
 
-.work h2 {
-  margin-left: 0.25em;
-}
-
 .project-top {
   display: flex;
   flex-direction: column;
@@ -334,19 +343,19 @@ header a {
 .project-top h1 {
   margin: 0 0 0.25em 0;
 }
+.project-top .container {
+  width: 100%;
+}
+
+.project-top.swiper-slide {
+  text-align: left;
+  justify-content: start;
+  align-items: start;
+}
 
 .intro {
   padding: 5em 0;
   height: auto;
-}
-
-.work {
-  background-color: #f1f9ff;
-  padding: 2em 0;
-  height: auto;
-}
-.work h2 {
-  color: #011627;
 }
 
 .case-study {
@@ -407,39 +416,50 @@ header a {
   color: white;
 }
 
+.project-top.city-flag {
+  background-image: url("../img/cityflag/honolulu-bluedk.jpg");
+  background-size: cover;
+  background-position: bottom center;
+}
+
 /* Work Grid */
+.work {
+  background-color: #f1f9ff;
+  padding: 5em 0;
+  height: auto;
+}
+.work h2 {
+  color: #011627;
+}
+
 .card-row {
   margin: 0 auto;
 }
 
 .card {
-  transition: all 0.5s ease 1s;
+  transition: all 0.2s ease;
   margin: 1%;
   background-color: white;
   display: flex;
   flex-direction: column;
+  box-shadow: none;
 }
 .card img {
   display: block;
   background-color: white;
 }
 .card .card-info {
-  padding: 20px;
+  padding: 30px;
   background-color: white;
   flex-grow: 1;
 }
 
 .card:hover {
   cursor: pointer;
+  box-shadow: 3px 7px 10px rgba(209, 215, 221, 0.5), 0 10px 10px rgba(209, 215, 221, 0.1);
 }
-.card:hover h3, .card:hover p {
-  color: white;
-}
-.card:hover img {
-  background-color: white;
-}
-.card:hover .card-info {
-  background-color: #1D7D77;
+.card:hover h3 {
+  color: #1D7D77;
 }
 
 @media (min-width: 768px) {
@@ -565,10 +585,11 @@ header a {
 }
 
 /* Buttons */
-a.button {
+a.button,
+a.button-white,
+a.button-gold {
   cursor: pointer;
-  color: black;
-  border: 0 solid;
+  border: 1px solid rgba(0, 0, 0, 0);
   display: inline-block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -581,82 +602,49 @@ a.button {
   text-transform: uppercase;
   font-size: 1em;
   letter-spacing: 0.5px;
-  box-shadow: inset 0 0 20px rgba(241, 249, 255, 0);
-  outline: 1px solid;
-  outline-color: black;
-  outline-offset: 0px;
   text-shadow: none;
+  outline-offset: 0px;
+  outline: 1px solid;
+}
+
+a.button:hover,
+a.button-white:hover,
+a.button-gold:hover {
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  border: 1px solid;
+  outline-offset: 10px;
+}
+
+a.button {
+  color: black;
+  box-shadow: inset 0 0 20px rgba(241, 249, 255, 0);
+  outline-color: black;
 }
 
 a.button:hover {
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
   background-color: rgba(255, 255, 255, 0.3);
-  border: 1px solid;
   outline-color: rgba(0, 0, 0, 0);
-  outline-offset: 15px;
-  text-shadow: 0.5px 0.5px 1px #D1D7DD;
 }
 
 a.button-white {
-  cursor: pointer;
   color: white;
-  border: 0 solid;
-  display: inline-block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0.75em 1em;
-  text-decoration: none;
-  margin: 1em 1em 1.5em 0;
-  font-family: "hero-new", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 1em;
-  letter-spacing: 0.5px;
   box-shadow: inset 0 0 20px rgba(241, 249, 255, 0);
-  outline: 1px solid;
   outline-color: white;
-  outline-offset: 0px;
-  text-shadow: none;
 }
 
 a.button-white:hover {
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-  border: 1px solid;
   outline-color: rgba(255, 255, 255, 0);
-  outline-offset: 15px;
-  text-shadow: 0.5px 0.5px 1px #D1D7DD;
 }
 
 .button-gold {
-  cursor: pointer;
   color: #A88F1E;
   border: 0 solid;
-  display: inline-block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0.75em 1em;
-  text-decoration: none;
-  margin: 1em 1em 1.5em 0;
-  font-family: "hero-new", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 1em;
-  letter-spacing: 0.5px;
   box-shadow: inset 0 0 20px rgba(84, 71, 15, 0);
-  outline: 1px solid;
   outline-color: #A88F1E;
-  outline-offset: 0px;
-  text-shadow: none;
 }
 
 .button-gold:hover {
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-  border: 1px solid;
   outline-color: rgba(168, 143, 30, 0);
-  outline-offset: 15px;
-  text-shadow: 0.5px 0.5px 1px #748798;
 }
 
 /* Swiper Buttons */
@@ -679,14 +667,14 @@ a.button-white:hover {
 }
 
 .case-study .swiper-button-prev {
-  color: #6070e6;
+  color: #1D7D77;
   top: auto;
   bottom: 5%;
   left: auto;
   right: 15%;
 }
 .case-study .swiper-button-next {
-  color: #6070e6;
+  color: #1D7D77;
   top: auto;
   bottom: 5%;
   left: auto;
@@ -799,12 +787,23 @@ header[data-slidecolor=dark] a {
           clip-path: inset(0 0 -12% 0);
 }
 
-.swiper-image .button {
+.swiper-image p {
   opacity: 0;
-  transition: all 0.5s ease-out 0.5s;
+  transition: opacity 0.5s ease-out 0.7s;
 }
 
-.swiper-slide-active .swiper-image .button {
+.swiper-slide-active .swiper-image p {
+  opacity: 1;
+}
+
+.swiper-image .button,
+.swiper-image .button-white {
+  opacity: 0;
+  transition: opacity 0.2s ease-out 0.9s;
+}
+
+.swiper-slide-active .swiper-image .button,
+.swiper-slide-active .swiper-image .button-white {
   opacity: 1;
 }
 

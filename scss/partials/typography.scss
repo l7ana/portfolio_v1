@@ -171,3 +171,19 @@ ul.bulleted li::before {
       margin-top: 1em;
     }
   }
+
+  // Work Section
+  .work {
+    .sectionhead {
+      margin: 1%;
+    }
+  }
+
+  .card {
+    h3 {
+      font-family: $type-subhead;
+      font-size: 2em;
+      font-weight: 600;
+    }
+    a {text-decoration: none;}
+  }

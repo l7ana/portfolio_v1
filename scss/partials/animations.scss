@@ -38,12 +38,23 @@
     transform: translateY(0);
     clip-path: inset(0 0 -12% 0);
    }
-    
-   .swiper-image .button {
+
+   .swiper-image p {
     opacity: 0;
-    transition: all .5s ease-out .5s;
+    transition: opacity .5s ease-out .7s;
    }
-   .swiper-slide-active .swiper-image .button {
+
+   .swiper-slide-active .swiper-image p {
+     opacity: 1;
+   }
+    
+   .swiper-image .button,
+   .swiper-image .button-white {
+    opacity: 0;
+    transition: opacity .2s ease-out .9s;
+   }
+   .swiper-slide-active .swiper-image .button,
+   .swiper-slide-active .swiper-image .button-white {
     opacity: 1;
    }
 
