@@ -181,6 +181,9 @@ ul.bulleted li::before {
 .card a {
   text-decoration: none;
 }
+.card p {
+  font-weight: 300;
+}
 
 img {
   max-width: 100%;
@@ -420,6 +423,10 @@ header a {
   background-image: url("../img/cityflag/honolulu-bluedk.jpg");
   background-size: cover;
   background-position: bottom center;
+}
+
+#copenhagen {
+  margin-bottom: 0;
 }
 
 /* Work Grid */
