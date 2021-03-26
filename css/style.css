@@ -338,13 +338,14 @@ header a {
   flex-direction: column;
   text-align: left;
   justify-content: center;
-  height: 80vh;
+  height: 100vh;
 }
 .project-top .sectionhead {
   margin-bottom: 0.5em;
 }
 .project-top h1 {
   margin: 0 0 0.25em 0;
+  line-height: 1.1;
 }
 .project-top .container {
   width: 100%;
@@ -375,8 +376,10 @@ header a {
 }
 
 .project-top.kpc {
-  background-image: url("../img/kpc/4x1/kpc_4x1.jpg");
-  box-shadow: inset 0 0 0 2000px rgba(253, 253, 242, 0.753);
+  background-image: url("../img/kpc/ani/chameleon_small.gif");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 90% 73%;
 }
 
 #kpc-to-slider {
@@ -420,13 +423,42 @@ header a {
 }
 
 .project-top.city-flag {
-  background-image: url("../img/cityflag/honolulu-bluedk.jpg");
+  background-image: url("../img/cityflag/honolulumap_2.jpg");
   background-size: cover;
-  background-position: bottom center;
+  background-position: 70% 0%;
 }
 
-#copenhagen {
+.project-top.copen-logo {
+  background-image: url(../img/copenhagen-logo/modern_lamp.jpg);
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: 115% -100%;
+}
+
+#copenhagen-inspo {
   margin-bottom: 0;
+}
+
+#copen-sketches {
+  background-image: url(../img/copenhagen-logo/sketches_3.jpg);
+  background-size: 100%;
+  max-height: 600px;
+  background-repeat: no-repeat;
+}
+#copen-sketches h2 {
+  margin-top: 3em;
+}
+
+#copen-bottom {
+  margin-bottom: 0;
+  height: auto;
+  padding-bottom: 0;
+}
+#copen-bottom h2 {
+  margin-top: 2em;
+}
+#copen-bottom .row {
+  margin-bottom: 2em;
 }
 
 /* Work Grid */
