@@ -17,6 +17,7 @@ h2, h3 {
   font-family: "kepler-std-semicondensed-cap", serif;
   margin: 0;
   color: #0C1C2A;
+  font-variant-ligatures: common-ligatures;
 }
 
 h1 {
@@ -25,6 +26,7 @@ h1 {
   font-size: 7em;
   line-height: 0.9em;
   margin: 0.5em 0 0 0;
+  font-variant-ligatures: common-ligatures;
 }
 
 h2 {
@@ -173,15 +175,18 @@ ul.bulleted li::before {
   margin: 1%;
 }
 
-.card h3 {
+.card-row a {
+  text-decoration: none;
+}
+.card-row .card h3 {
   font-family: "kepler-std-semicondensed-cap", serif;
   font-size: 2em;
   font-weight: 600;
 }
-.card a {
+.card-row .card a {
   text-decoration: none;
 }
-.card p {
+.card-row .card p {
   font-weight: 300;
 }
 
@@ -492,6 +497,13 @@ header a {
   background-position: 90% 30%;
 }
 
+.project-top.natura {
+  background-image: url(../img/natura/bluebutterfly.gif);
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: 115% 70%;
+}
+
 /* Work Grid */
 .work {
   background-color: #f1f9ff;
@@ -508,11 +520,14 @@ header a {
 
 .card {
   transition: all 0.2s ease;
-  margin: 1%;
+  margin: 1% 0%;
   background-color: white;
   display: flex;
   flex-direction: column;
   box-shadow: none;
+}
+.card:nth-child(2) {
+  margin-right: 1%;
 }
 .card img {
   display: block;
@@ -554,8 +569,10 @@ header a {
   .card.horizontal {
     width: 100%;
     display: flex;
+    margin: 2% 0;
   }
-  .card.horizontal .card-img, .card.horizontal .card-info {
+  .card.horizontal .card-img,
+.card.horizontal .card-info {
     width: 100%;
   }
 }
