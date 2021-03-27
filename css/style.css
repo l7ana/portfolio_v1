@@ -461,6 +461,11 @@ header a {
   margin-bottom: 2em;
 }
 
+#fohr-to-slider {
+  background-image: linear-gradient(white, #f5fafa);
+  margin: 0;
+}
+
 /* Work Grid */
 .work {
   background-color: #f1f9ff;
