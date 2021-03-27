@@ -339,6 +339,13 @@ header a {
   width: 100%;
 }
 
+.site-header.dark svg {
+  color: white;
+}
+.site-header.dark h1, .site-header.dark a, .site-header.dark li {
+  color: white;
+}
+
 .project-top {
   display: flex;
   flex-direction: column;
@@ -467,9 +474,22 @@ header a {
   margin-bottom: 2em;
 }
 
+.project-top.fohr {
+  background-image: url("../img/fohr/fohr_top_v1.jpg");
+  background-size: cover;
+  background-position: 0% 100%;
+}
+
 #fohr-to-slider {
-  background-image: linear-gradient(white, #f5fafa);
+  background-image: linear-gradient(white, rgba(245, 168, 28, 0.05));
   margin: 0;
+}
+
+#fohr-notes {
+  background-size: 200px;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  background-position: 90% 30%;
 }
 
 /* Work Grid */

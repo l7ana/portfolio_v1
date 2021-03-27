@@ -88,6 +88,11 @@ header a {
   }
 }
 
+.site-header.dark {
+  svg {color:white}
+  h1, a, li {color: white;}
+}
+
 // Project Pages
 
 .project-top {
@@ -170,7 +175,6 @@ header a {
 }
 
 // City Flag
-
 .project-top.city-flag {
   background-image: url('../img/cityflag/honolulumap_2.jpg');
   // background-repeat: no-repeat;
@@ -209,7 +213,19 @@ header a {
 }
 
 // FOHR
+.project-top.fohr {
+  background-image: url('../img/fohr/fohr_top_v1.jpg');
+  background-size: cover;
+  background-position: 0% 100%;
+}
 #fohr-to-slider {
-  background-image: linear-gradient(white, rgb(245,250,250));
+  background-image: linear-gradient(white, rgba(245,168,28, .05));
   margin: 0;
+}
+#fohr-notes {
+  // background-image: url(../img/fohr/3008.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  background-position: 90% 30%;
 }
