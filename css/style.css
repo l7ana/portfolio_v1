@@ -238,6 +238,12 @@ video.video-bg {
   left: -25px;
 }
 
+#fohr-prototype .imac-container {
+  padding-top: 26px;
+  width: 847px;
+  height: 491px;
+}
+
 html,
 body {
   position: relative;
