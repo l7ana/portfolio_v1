@@ -96,3 +96,19 @@ a.button {
     right: 10%;
     }
   }
+
+  #natura-swiper {
+    .swiper-button-prev {
+      top: auto;
+      bottom: 50%;
+      left: auto;
+      right: 95%;
+  }
+  
+  .swiper-button-next {
+    top: auto;
+    bottom: 50%;
+    left: 95%;
+    right: auto;
+    }
+  }

@@ -498,10 +498,20 @@ header a {
 }
 
 .project-top.natura {
-  background-image: url(../img/natura/bluebutterfly.gif);
-  background-size: 45%;
+  background-image: url(../img/natura/beetle.gif);
+  background-size: 60%;
   background-repeat: no-repeat;
-  background-position: 115% 70%;
+  background-position: 130% 50%;
+  overflow-x: hidden;
+}
+
+#natura-swiper {
+  margin-bottom: 0;
+}
+#natura-swiper .swiper-container {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 /* Work Grid */
@@ -519,7 +529,7 @@ header a {
 }
 
 .card {
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   margin: 1% 0%;
   background-color: white;
   display: flex;
@@ -768,10 +778,23 @@ a.button-white:hover {
   right: 10%;
 }
 
+#natura-swiper .swiper-button-prev {
+  top: auto;
+  bottom: 50%;
+  left: auto;
+  right: 95%;
+}
+#natura-swiper .swiper-button-next {
+  top: auto;
+  bottom: 50%;
+  left: 95%;
+  right: auto;
+}
+
 /* Swiper */
 .swiper-container {
   width: 100%;
-  height: 85%;
+  height: 100%;
   margin: 0;
 }
 
@@ -807,11 +830,13 @@ a.button-white:hover {
   border-color: white;
 }
 
-header[data-slidecolor=light] a {
+header[data-slidecolor=light] a,
+header[data-slidecolor=light] svg {
   color: black;
 }
 
-header[data-slidecolor=dark] a {
+header[data-slidecolor=dark] a,
+header[data-slidecolor=dark] svg {
   color: white;
 }
 
@@ -863,8 +888,8 @@ header[data-slidecolor=dark] a {
   transition: all 0.5s ease-out 0.25s;
   opacity: 0;
   transform: translateY(180%);
-  -webkit-clip-path: inset(0 0 400% 0);
-          clip-path: inset(0 0 400% 0);
+  -webkit-clip-path: inset(0 0 420% 0);
+          clip-path: inset(0 0 420% 0);
 }
 
 .swiper-slide-active .swiper-image h1 {

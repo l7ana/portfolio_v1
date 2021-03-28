@@ -44,41 +44,44 @@
             <div class="row">
                 <div class="column three-fourths" data-inview="no">
                     <h2>Introduction</h2>
-                    <p>This student project was to deliver a multi-page website design for a client of my selection. I
-                        chose to revisit a program I was involved in during all four years of my high school career.
-                        Friends of Hawaii Robotics (FOHR) is a non-profit organization that supports K-12 robotics
-                        education. It works as a network of mentors, teachers, volunteers, corporate partners, and
-                        advisors committed to making robotics education accessible to students across the state. They
-                        equip thousands of students with experience valuable to their STEM careers and essential
-                        21st-century life skills.</p>
-                    <a href="https://xd.adobe.com/view/50010916-ddef-4836-8bdc-c3b2ad08a1c6-0552/?fullscreen"
-                        class="button-gold">View Prototype</a>
+                    <p>For this student project, I was tasked to create a museum exhibit brochure for a topic or artist
+                        of my selection. At the time, I had recently discovered the work of Raku Inoue who is a Canadian
+                        based artist originally born in Tokyo. Because of my interest in flora, animals, and insects, I
+                        was very attracted to his arrangements for his Natura Insects series. Each piece of his has a
+                        life-like quality to me despite being constructed of inanimate pieces of nature. I hoped to
+                        bring that life-like quality to this printed project.</p>
                 </div>
                 <div class="column one-eigth" data-inview="no">
                     <h3>Services</h3>
                     <ul>
-                        <li>UI / UX Design</li>
-                        <li>Branding</li>
+                        <li>Print Design</li>
+                        <li>Typesetting</li>
                     </ul>
                 </div>
                 <div class="column one-eigth" data-inview="no">
                     <h3>Software</h3>
                     <ul>
-                        <li>Adobe XD</li>
-                        <li>Illustrator</li>
-                        <li>HTML/SCSS/JS</li>
+                        <li>InDesign</li>
+                        <li>Photoshop</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section class="case-study">
+    <section class="case-study" id="natura-swiper">
+        <div class="container">
+            <div class="row">
+                <div class="column one-whole text-centered" data-inview="no">
+                    <h2>Execution</h2>
+                    <p class="caption">Swipe through to view.</p>
+                </div>
+            </div>
+        </div>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./img/fohr/SiteMap.svg" alt="Old SiteMap vs. New SiteMap"></div>
-                <div class="swiper-slide"><img src="./img/fohr/LofiHome.svg" alt="LoFi Homepage Wireframes"></div>
-                <div class="swiper-slide"><img src="./img/fohr/StyleTiles.svg"
-                        alt="Style Tile 3# was chosen out of 3 Style Tiles"></div>
+                <div class="swiper-slide dark"><img src="img/natura/1panel_4x2.jpg" alt=""></div>
+                <div class="swiper-slide dark"><img src="img/natura/2panel_4x2.jpg" alt=""></div>
+                <div class="swiper-slide dark"><img src="img/natura/full_4x2.jpg" alt=""></div>
             </div>
             <!-- Add Arrows -->
             <div class="swiper-button-next"></div>
@@ -87,6 +90,17 @@
             <!-- <div class="swiper-pagination"></div> -->
         </div>
     </section>
+    <!-- <section class="case-study">
+        <div class="container">
+            <div class="row-reverse">
+                <div class="column three-fourths">
+                    <img src="img/natura/naturamockup.jpg" alt="">
+                </div>
+                <div class="column one-fourth"></div>
+            </div>
+        </div>
+    </section> -->
+
 
     <footer>
         <div class="container">
@@ -135,10 +149,8 @@
                     const initialheader = document.querySelector('.site-header');
                     if (initialslide.classList.contains('dark')) {
                         initialswiper.setAttribute('data-slidecolor', 'dark');
-                        initialheader.setAttribute('data-slidecolor', 'dark');
                     } else {
                         initialswiper.setAttribute('data-slidecolor', 'light');
-                        initialheader.setAttribute('data-slidecolor', 'light');
                     }
                 },
             },
@@ -153,18 +165,16 @@
             if (activeslide.classList.contains('dark')) {
                 console.log('this slide is dark');
                 myswiper.setAttribute('data-slidecolor', 'dark');
-                myheader.setAttribute('data-slidecolor', 'dark');
             } else {
                 console.log('this slide is light');
                 myswiper.setAttribute('data-slidecolor', 'light');
-                myheader.setAttribute('data-slidecolor', 'light');
             }
         });
 
     </script>
     <script>
         let options = {
-            rootMargin: "-100px 0px -100px 0px"
+            rootMargin: "-100px 0px -10px 0px"
         };
         // CHANGE ACTIVE STATE FOR ALL SECTIONS WITH INTERSECTION OBSERVER
         const myobserver = new IntersectionObserver(entries => {
