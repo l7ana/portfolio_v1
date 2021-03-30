@@ -506,12 +506,20 @@ header a {
 }
 
 #natura-swiper {
+  padding-bottom: 0;
   margin-bottom: 0;
 }
 #natura-swiper .swiper-container {
   width: 100%;
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+#natura-bottom {
+  margin: -1em 0 2em 0;
+}
+#natura-bottom img {
+  width: 100%;
 }
 
 /* Work Grid */
