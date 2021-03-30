@@ -9,11 +9,11 @@ a.button-gold {
   padding: .75em 1em;
   text-decoration: none;
   margin: 1em 1em 1.5em 0;
-  font-family: $type-body;
-  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: $type-subhead;
+  // font-feature-settings: 'smcp';
   text-transform: uppercase;
-  font-size: 1em;
-  letter-spacing: .5px;
   text-shadow: none;
   outline-offset: 0px;
   outline: 1px solid;
@@ -110,5 +110,37 @@ a.button {
     bottom: 50%;
     left: 95%;
     right: auto;
+    }
+  }
+
+  .arrow-down {
+    z-index: 2;
+    position: absolute;
+    // border: 1px solid red;
+    width: 100%;
+    text-align: center;
+    bottom: 2em; left: 0;
+    a {
+      color:black;
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-family: $type-subhead;
+      // font-feature-settings: 'smcp';
+      text-transform: uppercase;
+    }
+    svg {
+      display: block;
+      margin: 1em auto;
+      animation: down-arrow 3s cubic-bezier(0.25,0.46,0.45,0.94) both infinite;
+      path {
+        fill: transparent;
+        stroke: black;
+      }
+    }
+  }
+  @keyframes down-arrow {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
     }
   }
