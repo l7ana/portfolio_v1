@@ -34,7 +34,7 @@ a.button {
   }
 
   a.button:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    // background-color: rgba(255, 255, 255, 0.3);
     outline-color: rgba(black,0);
   }
 
@@ -127,6 +127,10 @@ a.button {
       font-family: $type-subhead;
       // font-feature-settings: 'smcp';
       text-transform: uppercase;
+      transition: all .7s ease-in-out;
+      &:hover {
+        text-shadow: 2px 2px 10px $grey-3;
+      }
     }
     svg {
       display: block;
@@ -135,6 +139,9 @@ a.button {
       path {
         fill: transparent;
         stroke: black;
+        &:hover {
+          filter: drop-shadow(5px 5px 5px $grey-3);
+        }
       }
     }
   }
@@ -144,3 +151,6 @@ a.button {
       transform: translateY(-20px);
     }
   }
+  // .arrow-down:hover {
+  //   text-shadow: 2px 2px 10px $grey-3;
+  // }

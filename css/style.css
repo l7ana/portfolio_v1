@@ -120,57 +120,6 @@ ul.bulleted li::before {
   font-size: 1.5em;
 }
 
-#show-me {
-  position: absolute;
-  width: 80%;
-  bottom: 68%;
-  left: 9.5%;
-  z-index: 2;
-}
-#show-me p {
-  font-family: "hero-new", sans-serif;
-  font-size: clamp(1em, 3vw, 2em);
-  font-weight: 300;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-}
-#show-me p::after {
-  content: "";
-  margin-top: 3.7vh;
-  height: 6.5vw;
-  width: 100%;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  max-height: 2.3em;
-  border-bottom: 2px solid white;
-}
-@media (max-width: 388px) {
-  #show-me p::after {
-    border: none;
-  }
-}
-
-.swiper-textbox {
-  position: relative;
-  top: 34%;
-  margin: 0;
-  left: 9.5%;
-  width: 80%;
-  z-index: 11;
-}
-.swiper-textbox h1 {
-  font-size: clamp(1.5em, 7vw, 7em);
-  white-space: nowrap;
-  margin: 0;
-  padding: 0;
-}
-.swiper-textbox .subhead {
-  margin-top: 1em;
-}
-
 .work .sectionhead {
   margin: 1%;
 }
@@ -726,7 +675,6 @@ a.button {
 }
 
 a.button:hover {
-  background-color: rgba(255, 255, 255, 0.3);
   outline-color: rgba(0, 0, 0, 0);
 }
 
@@ -812,6 +760,10 @@ a.button-white:hover {
   letter-spacing: 1px;
   font-family: "kepler-std-semicondensed-cap", serif;
   text-transform: uppercase;
+  transition: all 0.7s ease-in-out;
+}
+.arrow-down a:hover {
+  text-shadow: 2px 2px 10px #748798;
 }
 .arrow-down svg {
   display: block;
@@ -821,6 +773,9 @@ a.button-white:hover {
 .arrow-down svg path {
   fill: transparent;
   stroke: black;
+}
+.arrow-down svg path:hover {
+  filter: drop-shadow(5px 5px 5px #748798);
 }
 
 @keyframes down-arrow {
@@ -852,7 +807,57 @@ a.button-white:hover {
   text-align: left;
 }
 
-/* Slides */
+#show-me {
+  position: absolute;
+  width: 80%;
+  bottom: 68%;
+  left: 9.5%;
+  z-index: 2;
+}
+#show-me p {
+  font-family: "hero-new", sans-serif;
+  font-size: clamp(1em, 3vw, 2em);
+  font-weight: 300;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+#show-me p::after {
+  content: "";
+  margin-top: 3.7vh;
+  height: 6.5vw;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  max-height: 2.3em;
+  border-bottom: 2px solid white;
+}
+@media (max-width: 388px) {
+  #show-me p::after {
+    border: none;
+  }
+}
+
+.swiper-textbox {
+  position: relative;
+  top: 34%;
+  margin: 0;
+  left: 9.5%;
+  width: 80%;
+  z-index: 11;
+}
+.swiper-textbox h1 {
+  font-size: clamp(1.5em, 7vw, 7em);
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+.swiper-textbox .subhead {
+  margin-top: 1em;
+}
+
 .shabp {
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
 }
@@ -881,15 +886,23 @@ header[data-slidecolor=dark] svg {
 [data-slidecolor=light] .swiper-button-prev,
 [data-slidecolor=light] .swiper-button-next,
 [data-slidecolor=light] #show-me,
-[data-slidecolor=light] .site-header {
+[data-slidecolor=light] .arrow-down a {
   color: black;
 }
 
 [data-slidecolor=dark] .swiper-button-prev,
 [data-slidecolor=dark] .swiper-button-next,
 [data-slidecolor=dark] #show-me,
-[data-slidecolor=dark] .site-header {
+[data-slidecolor=dark] .arrow-down a {
   color: white;
+}
+
+[data-slidecolor=light] .arrow-down svg path {
+  stroke: black;
+}
+
+[data-slidecolor=dark] .arrow-down svg path {
+  stroke: white;
 }
 
 [data-slidecolor=light] #show-me p::after {

@@ -118,62 +118,6 @@ ul.bulleted li::before {
   }
 }
 
-// HERO TYPOGRAPHY
-  #show-me {
-    position: absolute;
-    // bottom: 68%;
-    width: 80%;
-    bottom: 68%;
-    left: 9.5%;
-    z-index: 2;
-    // margin-top: -6em;
-    // border: 1px solid green;
-    p {
-      font-family: $type-body;
-      font-size: clamp(1em, 3vw, 2em);
-      font-weight: 300;
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      line-height: 1;
-    }
-    p::after {
-      content: '';
-      margin-top: 3.7vh;
-      height: 6.5vw;
-      width: 100%;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      max-height: 2.3em;
-      // background-color: pink;
-      border-bottom: 2px solid white;
-      @media (max-width: 388px){
-        border: none;
-      } 
-    }
-  }
-
-  .swiper-textbox {
-    position: relative;
-    top: 34%;
-    // border: 1px solid red;
-    margin: 0;
-    left: 9.5%;
-    width: 80%;
-    // overflow: hidden;
-    z-index: 11;
-    h1 { 
-      font-size: clamp(1.5em, 7vw, 7em); 
-      white-space: nowrap;
-      margin: 0;
-      padding: 0;
-    }
-    .subhead {
-      margin-top: 1em;
-    }
-  }
-
   // Work Section
   .work {
     .sectionhead {
