@@ -139,6 +139,32 @@ ul.bulleted li::before {
   font-weight: 300;
 }
 
+p.pull-quote {
+  font-size: 4em;
+  font-family: "kepler-std-display", serif;
+  line-height: 1.2;
+  color: #543220;
+  font-weight: 300;
+  z-index: 1;
+  margin: 4em 0 -1em 0;
+  font-feature-settings: "liga";
+}
+p.pull-quote span {
+  font-style: italic;
+  font-weight: 500;
+  padding-right: 0.1em;
+}
+
+p.pull-quote::before {
+  content: "“";
+  font-weight: 700;
+  font-size: 6em;
+  line-height: 0;
+  display: block;
+  z-index: -1;
+  color: rgba(84, 50, 32, 0.2);
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -342,6 +368,10 @@ header a {
   background-image: linear-gradient(white, #f1f9ff);
 }
 
+.white-bg {
+  background: #f1f9ff;
+}
+
 .project-top.kpc {
   background-image: url("../img/kpc/ani/chameleon_small.gif");
   background-size: auto;
@@ -416,6 +446,29 @@ header a {
   margin-top: 3em;
 }
 
+#copen-quote {
+  background-color: #173753;
+  margin-bottom: 8em;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+#copen-quote .quote-box {
+  margin: 0 0 0 11.25%;
+}
+#copen-quote .quote-box p.pull-quote {
+  color: white;
+  margin-top: 3em;
+}
+#copen-quote .quote-box .pull-quote::before {
+  color: rgba(255, 255, 255, 0.2);
+  margin-left: -17%;
+  margin-bottom: -18%;
+}
+#copen-quote a.button-white {
+  margin: 5em 0 0 0.2em;
+}
+
 #copen-bottom {
   margin-bottom: 0;
   height: auto;
@@ -469,6 +522,61 @@ header a {
 }
 #natura-bottom img {
   width: 100%;
+}
+
+.project-top.two-ladies {
+  background-image: url(../img/2ladies/daifuku_2.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 90% 70%;
+  overflow-x: hidden;
+}
+
+#twoladies-sketch {
+  background-image: url(../img/2ladies/twoladies_sketches.jpg);
+  background-size: cover;
+  max-height: 600px;
+  background-repeat: no-repeat;
+}
+#twoladies-sketch h2 {
+  margin-top: 2em;
+}
+
+#twoladies-sketchdetails {
+  margin: 5em 0;
+}
+#twoladies-sketchdetails img {
+  width: 75%;
+}
+
+#twoladies-dev {
+  background-image: linear-gradient(rgba(48, 38, 29, 0.05), white);
+  padding: 8em 0 5em 0;
+}
+
+#twoladies-quote {
+  background-color: #543220;
+  margin-bottom: 8em;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+#twoladies-quote .quote-box {
+  margin: 0 0 0 11.25%;
+}
+#twoladies-quote .quote-box p.pull-quote {
+  color: white;
+  margin-top: 3em;
+}
+#twoladies-quote .quote-box .pull-quote::before {
+  color: rgba(255, 255, 255, 0.2);
+  margin-left: -17%;
+  margin-bottom: -18%;
+}
+
+#to-twoladies-swiper {
+  background-image: linear-gradient(white, #f5f4f4);
+  margin: 0;
 }
 
 /* Work Grid */
@@ -580,6 +688,10 @@ header a {
 
   .one-fourth {
     width: 24%;
+  }
+
+  .three-eighths {
+    width: 31%;
   }
 
   .one-half {

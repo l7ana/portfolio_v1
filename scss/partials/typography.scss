@@ -137,3 +137,26 @@ ul.bulleted li::before {
     p {font-weight: 300;}
   }
 }
+
+p.pull-quote {
+  font-size: 4em;
+  font-family: $type-heading;
+  line-height: 1.2;
+  color: $rust;
+  font-weight: 300;
+  z-index: 1;
+  margin: 4em 0 -1em 0;
+  font-feature-settings: "liga";
+  span {font-style: italic; font-weight: 500; padding-right: .1em;}
+}
+p.pull-quote::before {
+  content: "\201C";
+  font-weight: 700;
+  font-size: 6em;
+  line-height: 0;
+  display: block;
+  // margin-left: -17%;
+  // margin-bottom: -18%;
+  z-index: -1;
+  color: rgba($rust,0.2);
+}

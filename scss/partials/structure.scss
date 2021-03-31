@@ -127,6 +127,7 @@ header a {
 }
 
 .to-white { background-image: linear-gradient(white, $white-1);}
+.white-bg {background: $white-1;}
 
 // KPC
 
@@ -204,6 +205,26 @@ header a {
   max-height: 600px;
   background-repeat: no-repeat;
 }
+#copen-quote {
+  background-color: $navy;
+  margin-bottom: 8em;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  .quote-box {
+    margin: 0 0 0 11.25%;
+    p.pull-quote {
+      color: white;
+      margin-top: 3em
+    } 
+    .pull-quote::before {
+      color: rgba(white,.2);
+      margin-left: -17%;
+      margin-bottom: -18%;
+    }
+  }
+  a.button-white {margin: 5em 0 0 .2em;}
+}
 #copen-bottom {
   h2 {margin-top: 2em;}
   .row {margin-bottom: 2em;}
@@ -254,4 +275,59 @@ header a {
 #natura-bottom {
   img {width: 100%;}
   margin: -1em 0 2em 0;
+}
+
+// Two Ladies
+.project-top.two-ladies {
+  background-image: url(../img/2ladies/daifuku_2.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 90% 70%;
+  overflow-x: hidden;
+}
+// #twoladies-divider {
+//   background-image: url(../img/2ladies/daifuku_3.jpg);
+//   background-size: cover;
+//   height: 40vh;
+//   background-position-y: 70%;
+//   margin: 7em 0;
+// }
+#twoladies-sketch {
+  h2 {margin-top: 2em;}
+  background-image: url(../img/2ladies/twoladies_sketches.jpg);
+  background-size: cover;
+  max-height: 600px;
+  background-repeat: no-repeat;
+}
+#twoladies-sketchdetails {
+  margin: 5em 0;
+  img {width: 75%;}
+}
+#twoladies-dev {
+  background-image: linear-gradient(rgba(#30261D, .05), white);
+  // background-color: rgba(#30261D, .1);
+  padding: 8em 0 5em 0;
+}
+#twoladies-quote {
+  background-color: $rust;
+  margin-bottom: 8em;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  .quote-box {
+    margin: 0 0 0 11.25%;
+    p.pull-quote {
+      color: white;
+      margin-top: 3em
+    } 
+    .pull-quote::before {
+      color: rgba(white,.2);
+      margin-left: -17%;
+      margin-bottom: -18%;
+    }
+  }
+}
+#to-twoladies-swiper {
+  background-image:linear-gradient(white, #f5f4f4);
+  margin: 0;
 }
