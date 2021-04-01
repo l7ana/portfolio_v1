@@ -319,7 +319,7 @@ header a {
     margin: 0 0 0 11.25%;
     p.pull-quote {
       color: white;
-      margin-top: 3em
+      margin-top: 3em;
     } 
     .pull-quote::before {
       color: rgba(white,.2);
@@ -331,4 +331,33 @@ header a {
 #to-twoladies-swiper {
   background-image:linear-gradient(white, #f5f4f4);
   margin: 0;
+}
+
+// Prime
+#prime-video {
+  height: auto;
+  margin-bottom: 3em;
+}
+#prime-quote {
+  background-color: #2d0043;
+  margin-bottom: 8em;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  .quote-box {
+    margin: 0 0 0 11.25%;
+    p.pull-quote {
+      color: white;
+      margin-top: 3em;
+    } 
+    .pull-quote::before {
+      color: rgba(white,.2);
+      margin-left: -17%;
+      margin-bottom: -18%;
+    }
+    p.caption {
+      margin-top: 4em;
+      color: white;
+    }
+  }
 }
