@@ -863,7 +863,7 @@ a.button-white:hover {
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: 2em;
+  bottom: 1em;
   left: 0;
 }
 .arrow-down a {
@@ -879,7 +879,8 @@ a.button-white:hover {
 }
 .arrow-down svg {
   display: block;
-  margin: 1em auto;
+  margin: 0.5em auto;
+  margin-top: 1.75em;
   animation: down-arrow 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
 }
 .arrow-down svg path {
