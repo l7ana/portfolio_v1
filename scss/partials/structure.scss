@@ -334,30 +334,39 @@ header a {
 }
 
 // Prime
+.project-top.prime {
+  background-image: url(../img/prime/primelogo.svg);
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  overflow-x: hidden;
+}
 #prime-video {
   height: auto;
-  margin-bottom: 3em;
+  margin-bottom: 8em;
 }
 #prime-quote {
-  background-color: #2d0043;
-  margin-bottom: 8em;
-  overflow: hidden;
+  // background-color: rgba(#c39d4d, .07);
+  background-image: linear-gradient(rgba(#c39d4d, .08), white);
+  width: 100%;
+  // margin-bottom: 8em;
   display: flex;
   align-items: center;
   .quote-box {
-    margin: 0 0 0 11.25%;
+    // margin: 0 0 0 11.25%;
     p.pull-quote {
-      color: white;
       margin-top: 3em;
+      color: #2d0043;
     } 
     .pull-quote::before {
-      color: rgba(white,.2);
-      margin-left: -17%;
-      margin-bottom: -18%;
+      color: rgba(#c39d4d, .1);
+      margin-left: -19%;
+      margin-bottom: -15%;
     }
     p.caption {
       margin-top: 4em;
-      color: white;
+      color: #902800;
     }
   }
+  p {margin-top: 2em;}
 }
