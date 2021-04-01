@@ -370,3 +370,19 @@ header a {
   }
   p {margin-top: 2em;}
 }
+#to-prime-swiper {
+  background-image: linear-gradient(white, #FCFCFC);
+  margin: 10em 0 0 0; padding: 0;
+}
+#prime-bottom {
+  height: auto;
+  padding: 2em 0 1em 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color:#0E6390;
+  h3 {
+    margin: 0 .5em 0 0;
+    color: white;
+  }
+}

@@ -615,6 +615,25 @@ header a {
   margin-top: 2em;
 }
 
+#to-prime-swiper {
+  background-image: linear-gradient(white, #FCFCFC);
+  margin: 10em 0 0 0;
+  padding: 0;
+}
+
+#prime-bottom {
+  height: auto;
+  padding: 2em 0 1em 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #0E6390;
+}
+#prime-bottom h3 {
+  margin: 0 0.5em 0 0;
+  color: white;
+}
+
 /* Work Grid */
 .work {
   background-color: #f1f9ff;
@@ -890,6 +909,19 @@ a.button-white:hover {
 #natura-swiper .swiper-button-next {
   top: auto;
   bottom: 50%;
+  left: 95%;
+  right: auto;
+}
+
+#prime-swiper .swiper-button-prev {
+  top: auto;
+  bottom: 45%;
+  left: auto;
+  right: 95%;
+}
+#prime-swiper .swiper-button-next {
+  top: auto;
+  bottom: 45%;
   left: 95%;
   right: auto;
 }

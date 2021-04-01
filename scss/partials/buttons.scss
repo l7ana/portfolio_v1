@@ -112,6 +112,21 @@ a.button {
     right: auto;
     }
   }
+  #prime-swiper {
+    .swiper-button-prev {
+      top: auto;
+      bottom: 45%;
+      left: auto;
+      right: 95%;
+  }
+  
+  .swiper-button-next {
+    top: auto;
+    bottom: 45%;
+    left: 95%;
+    right: auto;
+    }
+  }
 
   .arrow-down {
     z-index: 2;
